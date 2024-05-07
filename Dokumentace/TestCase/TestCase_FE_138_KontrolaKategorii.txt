@@ -1,0 +1,27 @@
+Název TC + ID:
+	TestCase_FE-138 – Kontrola kategorií
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme viditelnost kategorií na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/ je dostupná.
+
+	
+Post-conditions:
+	- Po ověření jsou kategorie viditelné.
+
+Testovací kroky:
+1. Otevřeme hlavní stránku URL - https://www.dm.cz/. –> Bez problému.
+2. Zkontrolujeme zda-li jsou kategorie viditelné. -> Jsou viditelné.
+

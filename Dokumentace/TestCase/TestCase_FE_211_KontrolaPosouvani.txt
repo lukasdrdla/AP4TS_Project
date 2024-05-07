@@ -1,0 +1,28 @@
+Název TC + ID:
+	TestCase_FE-211 – Kontrola posouvání
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme posouvání obrázků v slideru na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/balea-men-balzam-po-holeni-energy-p4058172784774.html je dostupná.
+	- Slider s obrázky je na stránce viditelný a dostupný.
+	
+Post-conditions:
+	- Po kliknutí na tlačítko obrázky posunuty.
+
+Testovací kroky:
+1. Zkontrolujeme zda-li jsou tlačítko "Zobrazit další obrázek" viditelné. -> Je viditelné
+2. Klikneme na tlačítko "Zobrazit další obrázek". -> Bez problému, posunutí obrázku o 1 doprava.
+3. Zkontrolujeme zda-li jsou tlačítko "Zobrazit předchozí obrázek" viditelné. -> Je viditelné
+4. Klikneme na tlačítko "Zobrazit předchozí obrázek". -> Bez problému, posunutí obrázku o 1 doleva.

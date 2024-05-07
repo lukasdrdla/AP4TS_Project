@@ -1,0 +1,38 @@
+Název TC + ID:
+	TestCase_FE-112 – Kontrola Zapomenutí hesla
+
+Autor: Lukáš Drdla
+Datum: 01.03.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme správnou funkčnost zapomenutí hesla.
+
+Pre-conditions:
+	- Stránka s přihlašovacím formulářem je viditelná a dostupná.
+	- Uživatel je již zaregistrovaný.
+	
+Post-conditions:
+	- Uživatel obdrží email s odkazem na obnovení hesla.
+
+Testovací kroky:
+1. Zkontrolujeme zda-li je ikonka ""Moje dm zákaznické konto" v pravém rohu viditelné. -> Ikonka je viditelná.
+2. Klikneme na ikonku "Moje dm zákaznické konto". -> Nenastane problém.
+3. Zkontrolujeme přítomnost tlačítka "Přihlášení". -> Je přítomné.
+4. Klikneme na tlačítko "Přihlášení". -> Nenastane problém a přesměruje nás na další stránku.
+8. Zkontrolujeme přítomnost odkazu "Zapomněli jste heslo?" -> Je viditelné.
+9. Klikneme na odkaz "Zapomněli jste heslo?" -> Přesměrování na stránku URL - https://accounts.dm.cz/reset-password?referrer=login.
+10. Zkontrolujeme viditelnost pole formuláře. -> Jsou přítomné.
+11. Vyplníme formulář s e-mailem ("kolarfranta060@gmail.com") -> Nenastane problém.
+12. Zkontrolujeme přítomnost tlačítka "Odeslat" -> Je viditelné.
+13. Klikneme na tlačítko "Odeslat" -> Nenastane problem. Přesměrování na další stránku.
+
+
+
+

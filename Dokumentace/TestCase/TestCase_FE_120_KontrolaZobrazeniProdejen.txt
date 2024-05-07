@@ -1,0 +1,28 @@
+Název TC + ID:
+	TestCase_FE-120 – Kontrola zobrazení prodejen
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme funkčnost zobrazení prodejen na stránce.
+
+Pre-conditions:
+	- Stránka s vyhledávání prodej je viditelná a dostupná.
+	
+Post-conditions:
+	- Po vyhledání prodejny a kliknutí na tlačítko "další informace", zobrazí se podrobnější informace o obchodu.
+
+Testovací kroky:
+1. Zkontrolujeme zda-li je ikonka "Store" v pravém rohu viditelné. -> Ikonka je viditelná.
+2. Klikneme na ikonku "Store". -> Nenastane problém. Přesměrování na stránku URL - https://www.dm.cz/store
+3. Zkontrolujeme přítomnost a viditelnost vyhledávajícího pole. -> Je přítomné a viditelné
+4. Vyhledáme prodejnu "Zlín". -> Nenastane problém, prodejna se vyhledá.
+5. Vybereme prodejnu a klikneme na tlačítko "další informace". -> Přesměrování na podrobnější informace o prodejně.

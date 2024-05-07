@@ -1,0 +1,28 @@
+Název TC + ID:
+	TestCase_FE-149 – Kontrola filtrování podle barvy
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme funkčnost filtrování podle barvy u produktů na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/panska-kosmetika je dostupná.
+	- Tlačítka pro filtrování jsou na stránce viditelná a dostupná.
+	
+Post-conditions:
+	- Po potvrzení filtrace se na stránce zobrazí vyfiltrované produkty..
+
+Testovací kroky:
+1. Klikneme na tlačítko pro filtrování "Barva". -> Bez problému. Zobrazí se další okno.
+2. Zkontrolujeme jestli jsou možnosti pro výběr filtrace viditelné. -> Ano jsou viditelné.
+3. Klikneme na možnost "modrá". -> Bez problému.
+4. Zkontrolujeme zda-li se zobrazí vyfiltrované produkty. -> Ano vyfiltrované produkty jsou zobrazeny.

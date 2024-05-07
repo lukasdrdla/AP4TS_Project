@@ -1,0 +1,17 @@
+TestSada_FE-012 – Hledání prodejen
+
+Stručný popis:
+  Tahle testovací sada slouží k ověřené správného vyhledávání prodejen. Sada zahrnuje kontrolu vyhledávání, vyhledávání podle polohy, filtrování a zobrazení prodejen v rámci webové stránky URL -> https://www.dm.cz/
+  
+Pre-conditions:
+  - Hlavní adresa -> https://www.dm.cz/
+  - Testujeme v prohlížeči Google Chrome - verze 122.0.6261.70
+  - Webová stránka je dostupná
+  - Připojení k internetu je dostupné
+
+
+Post-conditions:
+  - Po dokončení testovací sady je hledání prodejen a veškeré funkcionality spojené s vyhledávání prodejen ověřeny.
+  - Vyhledávání a vyhledávání podle polohy je ověřeno.
+  - Filtrování je ověřeno.
+  - Zobrazení prodejen je ověřeno.

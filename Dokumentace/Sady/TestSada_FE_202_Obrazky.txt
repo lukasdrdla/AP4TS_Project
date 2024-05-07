@@ -1,0 +1,18 @@
+TestSada_FE-202 – Obrázky
+
+Stručný popis:
+  Tahle testovací sada slouží k ověření obrázků u produktu. Zabývá se kontrolou obrázků, posouvání a přiblížení fotky u produktů v rámci hlavní stránky URL -> https://www.dm.cz/
+  
+Pre-conditions:
+  - Hlavní adresa -> https://www.dm.cz/
+  - Adresa produktu -> https://www.dm.cz/balea-men-balzam-po-holeni-energy-p4058172784774.html
+  - Testujeme v prohlížeči Google Chrome - verze 122.0.6261.70
+  - Webová stránka je dostupná
+  - Připojení k internetu je dostupné
+
+
+Post-conditions:
+  - Po dokončení testovací sady jsou obrázky u produktu a veškeré funkcionality spojené s obrázky ověřeny.
+  - Obrázky jsou zobrazeny.
+  - S obrázky lze posouvat.
+  - Obrázky lze přiblížit.

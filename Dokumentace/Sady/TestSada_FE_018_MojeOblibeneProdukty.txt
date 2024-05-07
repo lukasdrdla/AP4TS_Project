@@ -1,0 +1,17 @@
+TestSada_FE-018 – Moje oblíbené produkty
+
+Stručný popis:
+  Tahle testovací sada slouží k ověření možnosti přidat produkt do seznamu "Oblíbených". Zabývá se kontrolou přidání produktu, smazání produktu a zobrazení oblíbených produktů v rámci hlavní stránky URL -> https://www.dm.cz/
+  
+Pre-conditions:
+  - Hlavní adresa -> https://www.dm.cz/
+  - Testujeme v prohlížeči Google Chrome - verze 122.0.6261.70
+  - Webová stránka je dostupná
+  - Připojení k internetu je dostupné
+
+
+Post-conditions:
+  - Po dokončení testovací sady je seznam s oblíbenými produkty a veškeré funkcionality spojené se seznamem ověřeny.
+  - Přidání do oblíbených je ověřeno.
+  - Smazání z oblíbených je ověřeno.
+  - Zobrazení oblíbených je ověřeno.

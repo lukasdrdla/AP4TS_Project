@@ -1,0 +1,14 @@
+TestSada_FE-011 – Odhlášení
+
+Stručný popis:
+  Tahle testovací sada slouží k ověření správného a bezpečného odhlášení uživatele z webové stránky URL -> https://www.dm.cz/
+  
+Pre-conditions:
+  - Hlavní adresa -> https://www.dm.cz/
+  - Testujeme v prohlížeči Google Chrome - verze 122.0.6261.70
+  - Webová stránka je dostupná
+  - Připojení k internetu je dostupné
+
+
+Post-conditions:
+  - Po dokončení testovací sady je uživatel úspěšně odhlášen.

@@ -1,0 +1,26 @@
+Název TC + ID:
+	TestCase_FE-212 – Kontrola přiblížení
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme zvětšení obrázků produktu na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/balea-men-balzam-po-holeni-energy-p4058172784774.html je dostupná.
+	- Slider s obrázky je na stránce viditelný a dostupný.
+	
+Post-conditions:
+	- Po najetí mýší na obrázek je fotka produktu zvětšena.
+
+Testovací kroky:
+1. Klikneme na obrázek produktu. -> Bez problému. Otevření PopUp s obrázkem.
+2. Najedeme myší na obrázek. -> Objeví se lupa, můžeme zvětšit. 

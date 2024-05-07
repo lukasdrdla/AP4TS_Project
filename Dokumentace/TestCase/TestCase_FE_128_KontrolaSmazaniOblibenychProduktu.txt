@@ -1,0 +1,32 @@
+Název TC + ID:
+	TestCase_FE-128 – Kontrola smazaní oblíbených produktů
+
+Autor: Lukáš Drdla
+Datum: 20.04.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme správnou funkčnost odebrání produktů z oblíbených na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/ je dostupná.
+	- Uživatel je přihlášen.
+	- Uživatel již přidal produkt do oblíbených.
+	
+Post-conditions:
+	- Uživatel smaže produkt z oblíbených po kliknutí na tlačítko "Neoznačovat produkt"
+
+Testovací kroky:
+1. Zkontrolujeme přítomnost ikonky "Moje seznamy a Moje produkty" v právem horním rohu -> Je viditelné.
+2. Klikneme na ikonku "Moje seznamy a Moje produkty" -> Nenastane problem. Přesměrování.
+3. Zkontrolujeme přítomnost tlačítka "Neoznačovat produkt" -> Je viditelné.
+4. Klikneme na tlačítko "Neoznačovat produkt" -> Nenastane problem. Produkt je odebrán z oblíbených.
+
+
+

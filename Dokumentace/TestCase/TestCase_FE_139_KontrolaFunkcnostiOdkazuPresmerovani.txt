@@ -1,0 +1,25 @@
+Název TC + ID:
+	TestCase_FE-139 – Kontrola funkčnosti odkazů (přesměrování)
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme funkčnost (přesměrování) kategorií na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/ je dostupná.
+	- Kategorie jsou na hlavní stránce viditelné a dostupné.
+	
+Post-conditions:
+	- Po kliknutí na kategorie je uživatel přesměrován na podstránku.
+
+Testovací kroky:
+1. Klikneme na kategorii "Líčení". -> Přesměrování na podstránku.

@@ -1,0 +1,29 @@
+Název TC + ID:
+	TestCase_FE-134 – Kontrola možnosti přejít k platbě
+
+Autor: Lukáš Drdla
+Datum: 24.04.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme správnou funkčnost přejít k platbě v košíku na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/ je dostupná.
+	- Uživatel již přidal produkt do košíku.
+	
+Post-conditions:
+	- Uživatel je přesměrován na podstránku pro zadaní adresy a platební metody po kliknutí na tlačítko "K platbě".
+
+Testovací kroky:
+1. Zkontrolujeme přítomnost ikonky "Nákupní košík" v právem horním rohu -> Je viditelné.
+2. Klikneme na ikonku "Nákupní košík" -> Nenastane problem. Přesměrování.
+3. Zkontrolujeme přítomnost tlačítka "K platbě" -> Je viditelné.
+4. Klikneme na tlačítko "K platbě" -> Nenastane problem. Uživatel je přesměrován na podstránku pro vyplnění údajů.
+

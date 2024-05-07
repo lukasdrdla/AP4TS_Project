@@ -1,0 +1,29 @@
+Název TC + ID:
+	TestCase_FE-218 – Kontrola maximální a minimální hodnoty množství
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme funkčnost tlačítka pro snížení a zvýšení množství na min/max hodnotu v BuyBoxu u produktu na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/balea-men-balzam-po-holeni-energy-p4058172784774.html je dostupná.
+	- BuyBox je viditelný.
+	
+Post-conditions:
+	- Po kliknutí na tlačítko "Zvýšit počet" se počet zvýší ale nepřesáhne max. hodnotu(24) a "Snížit počet" se množství sníží na minimální počet (1).
+
+Testovací kroky:
+1. Otevřeme stránku URL - https://www.dm.cz/balea-men-balzam-po-holeni-energy-p4058172784774.html. –> Bez problému.
+2. Zkontrolujeme zda-li je tlačítko "Změnit počet" viditelné. -> Ano je viditelné.
+3. Zvýšíme počet na hodnotu 24. -> Bez problému. Dále zvýšit to nejde.
+4. Snížíme počet (1). -> Bez problému. Dále to snížit nejde.
+

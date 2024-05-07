@@ -1,0 +1,1 @@
+Neprošli všechny testy kvůli nově přidanému PopUpu, který se zobrazuje jenom někdy - nevěděl jsem jak to udělat.., recaptcha, updaty..

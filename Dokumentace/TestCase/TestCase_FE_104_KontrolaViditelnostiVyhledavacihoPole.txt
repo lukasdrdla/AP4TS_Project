@@ -1,0 +1,28 @@
+Název TC + ID:
+	TestCase_FE-104 – Kontrola viditelnosti vyhledávacího pole
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme viditelnost vyhledávacího pole na stránce.
+
+Pre-conditions:
+	- Webová stránka obsahuje vyhledávací pole.
+	
+Post-conditions:
+	- Po ověření je vyhledávací pole viditelné.
+
+Testovací kroky:
+1. Otevřeme hlavní stránku webu https://www.dm.cz/ -> Bez problému.
+2. Najdeme vyhledávací pole. -> Nalezeno.
+3. Zkontrolujeme viditelnost vyhledávání	
+
+

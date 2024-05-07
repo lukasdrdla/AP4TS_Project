@@ -1,0 +1,27 @@
+Název TC + ID:
+	TestCase_FE-142 – Kontrola posouvání produktů
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme posouvání produktů v sekci "Nově v sortimentu" na stránce.
+
+Pre-conditions:
+	- Sekce "Nově v sortimentu" je na hlavní stránce viditelná a dostupná.
+	
+Post-conditions:
+	- Po kliknutí na tlačítko v sekci "Nově v sortimentu" jsou produkty posunuty.
+
+Testovací kroky:
+1. Zkontrolujeme zda-li jsou tlačítko "Zobrazit další produkt" viditelné. -> Je viditelné
+2. Klikneme na tlačítko "Zobrazit další produkt". -> Bez problému, posunutí produktu o 1 doprava.
+3. Zkontrolujeme zda-li jsou tlačítko "Zobrazit předchozí produkt" viditelné. -> Je viditelné
+4. Klikneme na tlačítko "Zobrazit předchozí produkt". -> Bez problému, posunutí produktu o 1 doleva.

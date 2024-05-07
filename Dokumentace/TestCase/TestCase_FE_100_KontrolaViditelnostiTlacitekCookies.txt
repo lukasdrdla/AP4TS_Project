@@ -1,0 +1,30 @@
+Název TC + ID:
+	TestCase_FE-100 – Kontrola viditelnosti tlačítek cookies
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme viditelnost tlačítek pro zpracování cookies na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/ je dostupná.
+	- Webová stránka obsahuje potvrzení o zpracování cookies.
+	
+Post-conditions:
+	- Tlačítka cookies jsou viditelná.
+
+Testovací kroky:
+1. Zkontrolujeme přítomnost PopUp pro zpracování cookies -> Je viditelné.
+2. Zkontrolujeme přítomnost tlačítka "Přijmout vše". -> Je viditelné.
+3. Zkontrolujeme přítomnost tlačítka "Odmítnout". -> Je viditelné.
+
+
+

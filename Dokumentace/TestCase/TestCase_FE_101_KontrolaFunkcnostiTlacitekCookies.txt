@@ -1,0 +1,29 @@
+Název TC + ID:
+	TestCase_FE-101 – Kontrola funkčnosti tlačítek cookies
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme správnou funkcionalitu tlačítek pro zpracování cookies na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/ je dostupná.
+	- Webová stránka obsahuje potvrzení o zpracování cookies.
+	
+Post-conditions:
+	- Po potvrzení používání cookies, se již upozornění pro souhlas cookies nezobrazí.
+
+Testovací kroky:
+1. Zkontrolujeme přítomnost tlačítek pro zpracování cookies. -> Jsou viditelná.
+2. Klikneme na tlačítko "Přijmout vše". -> Bez problému. Přesměrování na https://www.dm.cz/
+3. Zkontrolujeme, že při znovu načtení webové stránky se nezobrazí potvrzení cookies. -> Bez problému.
+
+

@@ -1,0 +1,18 @@
+TestSada_FE-019 – Nákupní košík
+
+Stručný popis:
+  Tahle testovací sada slouží k ověření správného chování nákupního košíku. Zabývá se kontrolou přidání produktu, odstranění produktu, změny množství, možnosti přejít k platbě a kontrolou celkové ceny v rámci hlavní stránky URL -> https://www.dm.cz/
+  
+Pre-conditions:
+  - Hlavní adresa -> https://www.dm.cz/
+  - Testujeme v prohlížeči Google Chrome - verze 122.0.6261.70
+  - Webová stránka je dostupná
+  - Připojení k internetu je dostupné
+
+
+Post-conditions:
+  - Po dokončení testovací sady je nákupní košík a veškeré funkcionality spojené s košíkem ověřeny.
+  - Přidání produktu do košíku je ověřeno.
+  - Odstranění produktu z košíku je ověřeno.
+  - Změna množství je ověřena.
+  - Celková cena je ověřena.

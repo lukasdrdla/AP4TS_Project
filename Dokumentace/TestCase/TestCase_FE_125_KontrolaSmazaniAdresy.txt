@@ -1,0 +1,35 @@
+Název TC + ID:
+	TestCase_FE-125 – Kontrola smazaní adresy
+
+Autor: Lukáš Drdla
+Datum: 24.04.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme správnou funkčnost smazání adresy uživatele na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/ je dostupná.
+	- Uživatel je přihlášen.
+	
+Post-conditions:
+	- Uživatel vymaže adresu, po kliknutí na tlačítko "Odstranit".
+
+Testovací kroky:
+1. Zkontrolujeme zda-li je ikonka "Moje dm zákaznické konto" v pravém rohu viditelné". -> Ikonka je viditelná.
+2. Klikneme na ikonku "Moje dm zákaznické konto". -> Nenastane problém.
+3. Zkontrolujeme přítomnost tlačítka "Můj profil". -> Je přítomné.
+4. Klikneme na tlačítko "Můj profil". -> Nenastane problém a přesměruje nás na další stránku.
+5. Zkontrolujeme přítomnost tlačítka "Moje adresy". -> Je přítomné.
+6. Klikneme na tlačítko "Moje adresy". -> Nenastane problém a přesměruje nás na další stránku.
+7. Zkontrolujeme přítomnost tlačítka "Odstranit". -> Je přítomné.
+8. Klikneme na tlačítko "Odstranit". -> Nenastane problém a adresa se odstraní.
+
+
+

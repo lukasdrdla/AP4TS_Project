@@ -1,0 +1,28 @@
+Název TC + ID:
+	TestCase_FE-130 – Kontrola přidání produktu do košíku
+
+Autor: Lukáš Drdla
+Datum: 24.04.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme správnou funkčnost přidání produktů do košíku na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/ je dostupná.
+	
+Post-conditions:
+	- Uživatel přidá produkt do košíku po kliknutí na tlačítko "Vložit do košíku".
+
+Testovací kroky:
+1. Nalezneme produkt na stránce, který chceme přidat do košíku. -> Nalezeno.
+2. Zkontrolujeme přítomnost tlačítka "Vložit do košíku" -> Je viditelné.
+3. Klikneme na tlačítko "Vložit do košíku" -> Nenastane problem. Produkt je přidán do košíku.
+
+

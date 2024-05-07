@@ -1,0 +1,16 @@
+TestSada_FE-013 – Správa profilu
+
+Stručný popis:
+  Tahle testovací sada slouží k ověření správného chování při správě profilu uživatele. Zabývá se kontrolou úpravy uživatelské profilu a nastavení newsletteru v rámci hlavní stránky URL -> https://www.dm.cz/
+  
+Pre-conditions:
+  - Hlavní adresa -> https://www.dm.cz/
+  - Testujeme v prohlížeči Google Chrome - verze 122.0.6261.70
+  - Webová stránka je dostupná
+  - Připojení k internetu je dostupné
+
+
+Post-conditions:
+  - Po dokončení testovací sady je správa uživatelského profilu a hlavní funkcionality spojené se správou profilu ověřeny.
+  - Uživatel si nastaví newsletter.
+  - Uživatel si nastaví profil

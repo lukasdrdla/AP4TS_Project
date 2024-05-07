@@ -1,0 +1,26 @@
+Název TC + ID:
+	TestCase_FE-136 – Kontrola přesměrování
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme funkčnost (přesměrování) slideru na stránce.
+
+Pre-conditions:
+	- Slider je na hlavní stránce viditelný a dostupný.
+	
+Post-conditions:
+	- Po kliknutí na obrázek slider je uživatel přesměrován na podstránku.
+
+Testovací kroky:
+1. Zkontrolujeme jestli jsou obrázku slideru viditelné. -> Jsou viditelné.
+2. Klikneme na obrázek. -> Přesměrování na podstránku.
+

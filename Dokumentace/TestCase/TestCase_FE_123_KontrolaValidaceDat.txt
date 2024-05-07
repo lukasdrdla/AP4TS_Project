@@ -1,0 +1,42 @@
+Název TC + ID:
+	TestCase_FE-123 – Kontrola validace dat
+
+Autor: Lukáš Drdla
+Datum: 24.04.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme správnou funkčnost polí pro přidání nové adresy uživatele na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/ je dostupná.
+	- Uživatel je přihlášen.
+	
+Post-conditions:
+	- Uživateli se zobrazí chybové hlášení při pokusu o přidá adresy, po kliknutí na tlačítko "Doplnit".
+
+Testovací kroky:
+1. Zkontrolujeme zda-li je ikonka "Moje dm zákaznické konto" v pravém rohu viditelné". -> Ikonka je viditelná.
+2. Klikneme na ikonku "Moje dm zákaznické konto". -> Nenastane problém.
+3. Zkontrolujeme přítomnost tlačítka "Můj profil". -> Je přítomné.
+4. Klikneme na tlačítko "Můj profil". -> Nenastane problém a přesměruje nás na další stránku.
+5. Zkontrolujeme přítomnost tlačítka "Moje adresy". -> Je přítomné.
+6. Klikneme na tlačítko "Moje adresy". -> Nenastane problém a přesměruje nás na další stránku.
+7. Zkontrolujeme přítomnost tlačítka "Přidat novou adresu". -> Je přítomné.
+8. Klikneme na tlačítko "Přidat novou adresu". -> Nenastane problém a zobrazí se PopUp s formulářem pro úpravu údajů.
+9. Zkontrolujeme viditelnost všech polí formuláře. -> Jsou přítomné.
+10. Do pole pro příjemce vepíšeme ("?") -> Nenastane problém.
+11. Do pole pro Ulice a číslo popisné vepíšeme ("!") -> Nenastane problém.
+12. Do pole pro PSČ vepíšeme ("00") -> Nenastane problém.
+13. Do pole pro Město vepíšeme ("PS!") -> Nenastane problém.
+14. Zkontrolujeme přítomnost tlačítka "Doplnit" -> Je viditelné.
+15. Klikneme na tlačítko "Doplnit" ->Nastane problém. Chybové hlášení je zobrazeno.
+
+
+

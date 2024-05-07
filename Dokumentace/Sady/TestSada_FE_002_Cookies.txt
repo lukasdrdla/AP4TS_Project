@@ -1,0 +1,17 @@
+TestSada_FE-002 - Cookies
+
+Stručný popis:
+ Tahle testovací sada slouží k ověření správného chování cookies. Zabývá se kontrolou tlačítek a funkčnosti tlačítek v rámci webové stránky URL -> https://www.dm.cz/
+
+  
+Pre-conditions:
+  - Hlavní adresa -> https://www.dm.cz/
+  - Testujeme v prohlížeči Google Chrome - verze 122.0.6261.70
+  - Webová stránka je dostupná
+  - Připojení k internetu je dostupné
+  - Cookies jsou povoleny v nastavení prohlížeče
+
+
+Post-conditions:
+  - Po dokončení testovací sady jsou ověřeny funkcionality tlačítek cookies, zda správně reagují      na uživatelské interakce.
+  - Tlačítka cookies jsou viditelná na webové stránce.

@@ -1,0 +1,28 @@
+Název TC + ID:
+	TestCase_FE-217 – Kontrola zvýšení a snížení množství
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme funkčnost tlačítka pro snížení a zvýšení množství v BuyBoxu u produktu na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/balea-men-balzam-po-holeni-energy-p4058172784774.html je dostupná.
+	- BuyBox je viditelný.
+	
+Post-conditions:
+	- Po kliknutí na tlačítko "Zvýšit počet" se počet zvýší a "Snížit počet" se množství sníží.
+
+Testovací kroky:
+1. Otevřeme stránku URL - https://www.dm.cz/balea-men-balzam-po-holeni-energy-p4058172784774.html. –> Bez problému.
+2. Zkontrolujeme zda-li je tlačítko "Změnit počet" viditelné. -> Ano je viditelné.
+3. Zvýšíme nebo Snížíme počet. -> Bez problému. Počet je snížen/zvýšen.
+

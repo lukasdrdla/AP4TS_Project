@@ -1,0 +1,32 @@
+Název TC + ID:
+	TestCase_FE-119 – Kontrola Filtrování
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme funkčnost filtrování prodejen na stránce.
+
+Pre-conditions:
+	- Stránka s vyhledávání prodej je viditelná a dostupná.
+	
+Post-conditions:
+	- Po vyhledání prodejny a zvolení filtru, se zobrazí vyfiltrované prodejny.
+
+Testovací kroky:
+1. Zkontrolujeme zda-li je ikonka "Store" v pravém rohu viditelné. -> Ikonka je viditelná.
+2. Klikneme na ikonku "Store". -> Nenastane problém. Přesměrování na stránku URL - https://www.dm.cz/store
+3. Zkontrolujeme přítomnost a viditelnost vyhledávajícího pole. -> Je přítomné a viditelné
+4. Vyhledáme prodejnu "Zlín". -> Nenastane problém, prodejna se vyhledá.
+5. Zkontrolujeme zda-li je tlačítko "Filtrovat" v pravém dolním rohu viditelné. -> Tlačítko je viditelná.
+6. Klikneme na tlačítko "Filtrovat". -> Nenastane problém. Otevření menu pro filtrování. 
+7. Klikneme na pole "Aktuálně otevřeno". -> Bez problému.
+8. Zkontrolujeme zda-li je tlačítko "ukázat prodejny" viditelné. -> Je viditelné
+9. Klikneme na tlačítko "ukázat prodejny". -> Zobrazí se prodejny, které jsou otevřeny.

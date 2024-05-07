@@ -1,0 +1,39 @@
+Název TC + ID:
+	TestCase_FE-121 – Kontrola úpravy osobních údajů
+
+Autor: Lukáš Drdla
+Datum: 01.03.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme správnou funkčnost úpravy osobních údajů uživatele.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/ je dostupná.
+	- Uživatel je přihlášen.
+	
+Post-conditions:
+	- Uživatel si může změnit své osobní údaje, po kliknutí na tlačítko "Změnit".
+
+Testovací kroky:
+1. Zkontrolujeme zda-li je ikonka "Moje dm zákaznické konto" v pravém rohu viditelné". -> Ikonka je viditelná.
+2. Klikneme na ikonku "Moje dm zákaznické konto". -> Nenastane problém.
+3. Zkontrolujeme přítomnost tlačítka "Můj profil". -> Je přítomné.
+4. Klikneme na tlačítko "Můj profil". -> Nenastane problém a přesměruje nás na další stránku.
+5. Zkontrolujeme přítomnost tlačítka "Moje údaje". -> Je přítomné.
+6. Klikneme na tlačítko "Moje údaje". -> Nenastane problém a přesměruje nás na další stránku.
+7. Zkontrolujeme přítomnost tlačítka "Edit". -> Je přítomné.
+8. Klikneme na tlačítko "Edit". -> Nenastane problém a zobrazí se PopUp s formulářem pro úpravu údajů.
+9. Zkontrolujeme viditelnost všech polí formuláře. -> Jsou přítomné.
+10. Upravíme pole pro jméno ("František") -> Nenastane problém.
+11. Zkontrolujeme přítomnost tlačítka "Změnit" -> Je viditelné.
+12. Klikneme na tlačítko "Změnit" -> Nenastane problem. Údaje jsou opraveny.
+
+
+

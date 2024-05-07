@@ -1,0 +1,25 @@
+Název TC + ID:
+	TestCase_FE-151 – Kontrola rozložení elementů na stránce
+
+Autor: Lukáš Drdla
+Datum: 24.04.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme rozložení elementů na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/ je dostupná.
+	
+Post-conditions:
+	- Všechny prvky na stránce jsou správně rozmístěny a zarovnány.
+
+Testovací kroky:
+1. Otevřeme hlavní stránku URL - https://www.dm.cz/. -> Bez problému.
+2. Kontrolujeme a pozorujeme rozmístění všech prvků na stránce (text, obrázky, ..). -> Všechno je zarovnané a správně zobrazeno.

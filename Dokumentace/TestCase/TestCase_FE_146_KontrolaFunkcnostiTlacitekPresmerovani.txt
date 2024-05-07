@@ -1,0 +1,25 @@
+Název TC + ID:
+	TestCase_FE-146 – Kontrola funkčnosti tlačítek (přesměrování)
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme funkčnost (přesměrování) tlačítek pro stáhnutí aplikace na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/ je dostupná.
+	- Tlačítka jsou na hlavní stránce viditelná a dostupná.
+	
+Post-conditions:
+	- Po kliknutí na tlačítka je uživatel přesměrován na podstránku.
+
+Testovací kroky:
+1. Klikneme na tlačítko "Aplikace Moje dm ke stažení na Google play". -> Přesměrování na stránku https://play.google.com/store/apps/details?id=de.dm.meindm.android&referrer=adjust_reftag%3DcjP3x3C3BCLiq%26utm_source%3DCZ_eBon_2%26utm_campaign%3DeBon_aplikace&pli=1

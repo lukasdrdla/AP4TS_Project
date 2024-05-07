@@ -1,0 +1,17 @@
+TestSada_FE-022 – Nově v sortimentu
+
+Stručný popis:
+  Tahle testovací sada slouží k ověření správného chování sekce "Nově v sortimentu" na hlavní stránce. Zabývá se kontrolou produktů, posouvání a přesměrování v rámci hlavní stránky URL -> https://www.dm.cz/
+  
+Pre-conditions:
+  - Hlavní adresa -> https://www.dm.cz/
+  - Testujeme v prohlížeči Google Chrome - verze 122.0.6261.70
+  - Webová stránka je dostupná
+  - Připojení k internetu je dostupné
+
+
+Post-conditions:
+  - Po dokončení testovací sady je sekce nově v sortimentu a veškeré funkcionality spojené s ní ověřeny. (Viditelnost, posouvání, přesměrování)
+  - Sekce je viditelná.
+  - Po kliknutí na produkt je uživatel přesměrován
+  - Po kliknutí na tlačítko "Posunout", jsou produkty posunuty.

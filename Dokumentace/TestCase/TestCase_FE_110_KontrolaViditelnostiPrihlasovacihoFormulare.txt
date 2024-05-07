@@ -1,0 +1,29 @@
+Název TC + ID:
+	TestCase_FE-110 – Kontrola viditelnosti přihlašovacího formuláře
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme viditelnost přihlašovacího formuláře na stránce.
+
+Pre-conditions:
+	- Webová stránka umožňuje uživateli se přihlásit.
+	
+Post-conditions:
+	- Po ověření je přihlašovací formulář viditelný.
+
+Testovací kroky:
+1. Zkontrolujeme zda-li je ikonka ""Moje dm zákaznické konto" v pravém rohu viditelné. -> Ikonka je viditelná.
+2. Klikneme na ikonku "Moje dm zákaznické konto". -> Nenastane problém.
+3. Zkontrolujeme přítomnost tlačítka "Přihlásit". -> Je přítomné.
+4. Klikneme na tlačítko "Přihlásit". -> Nenastane problém a přesměruje nás na další stránku.
+5. Zkontrolujeme zda-li je přihlašovací formulář viditelný. -> Je viditelný.
+

@@ -1,0 +1,30 @@
+Název TC + ID:
+	TestCase_FE-127 – Kontrola přidání oblíbených produktů
+
+Autor: Lukáš Drdla
+Datum: 24.04.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme správnou funkčnost přidání produktů do oblíbených na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/ je dostupná.
+	- Uživatel je přihlášen.
+	
+Post-conditions:
+	- Uživatel přidá produkt do oblíbených po kliknutí na tlačítko "Přidat do oblíbených"
+
+Testovací kroky:
+1. Nalezneme produkt na stránce, který chceme přidat do oblíbených. -> Nalezeno.
+2. Zkontrolujeme přítomnost tlačítka "Označit produkt" -> Je viditelné.
+3. Klikneme na tlačítko "Označit produkt" -> Nenastane problem. Produkt je přidán do oblíbených.
+
+
+

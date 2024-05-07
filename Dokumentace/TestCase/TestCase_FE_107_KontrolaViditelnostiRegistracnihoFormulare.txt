@@ -1,0 +1,31 @@
+Název TC + ID:
+	TestCase_FE-107 – Kontrola viditelnosti registračního formuláře
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme viditelnost registračního formuláře na stránce.
+
+Pre-conditions:
+	- Webová stránka umožňuje uživateli se zaregistrovat.
+	
+Post-conditions:
+	- Po ověření je registrační formulář viditelný.
+
+Testovací kroky:
+1. Zkontrolujeme zda-li je ikonka ""Moje dm zákaznické konto" v pravém rohu viditelné. -> Ikonka je viditelná.
+2. Klikneme na ikonku "Moje dm zákaznické konto". -> Nenastane problém.
+3. Zkontrolujeme přítomnost tlačítka "Registrovat se". -> Je přítomné.
+4. Klikneme na tlačítko "Registrovat se". -> Nenastane problém a přesměruje nás na další stránku.
+5. Zkontrolujeme přítomnost tlačítka "Založit dm zákaznické konto". -> Je přítomné.
+4. Klikneme na tlačítko "Založit dm zákaznické konto". -> Nenastane problém a přesměruje nás na další stránku.
+5. Zkontrolujeme zda-li je registrační formulář viditelný. -> Je viditelný.
+

@@ -1,0 +1,28 @@
+Název TC + ID:
+	TestCase_FE-137 – Kontrola posouvání obrázků
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme posouvání slideru na stránce.
+
+Pre-conditions:
+	- Slider je na hlavní stránce viditelný a dostupný.
+	
+Post-conditions:
+	- Po kliknutí na tlačítka slider jsou obrázku posunuty.
+
+Testovací kroky:
+1. Zkontrolujeme jestli jsou obrázku slideru viditelné. -> Jsou viditelné.
+2. Zkontrolujeme zda-li jsou tlačítko "Zobrazit další položku" viditelné. -> Je viditelné
+3. Klikneme na tlačítko "Zobrazit další položku". -> Bez problému, posunutí obrázku o 1 doprava.
+4. Zkontrolujeme zda-li jsou tlačítko "Zobrazit předchozí položku" viditelné. -> Je viditelné
+5. Klikneme na tlačítko "Zobrazit předchozí položku". -> Bez problému, posunutí obrázku o 1 doleva.

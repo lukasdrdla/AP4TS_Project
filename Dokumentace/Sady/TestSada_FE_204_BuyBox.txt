@@ -1,0 +1,15 @@
+TestSada_FE-204 – BuyBox
+
+Stručný popis:
+  Tahle testovací sada slouží k ověření správného chování BuyBoxu. Zabývá se kontrolou BuyBoxu, ověření dostupnosti produktu v prodejně a sekce pro přidání do košíku u produktu v rámci hlavní stránky URL -> https://www.dm.cz/
+  
+Pre-conditions:
+  - Hlavní adresa -> https://www.dm.cz/
+  - Adresa produktu -> https://www.dm.cz/balea-men-balzam-po-holeni-energy-p4058172784774.html
+  - Testujeme v prohlížeči Google Chrome - verze 122.0.6261.70
+  - Webová stránka je dostupná
+  - Připojení k internetu je dostupné
+
+
+Post-conditions:
+  - Po dokončení testovací sady je BuyBox a veškeré funkcionality spojené s ním ověřeny. (Zobrazení, přidání do košíku, ověření dostupnosti v prodejně)

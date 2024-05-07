@@ -1,0 +1,14 @@
+TestSada_FE-025 – Filtrovaní
+
+Stručný popis:
+  Tahle testovací sada slouží k ověření správného filtrování produktů. Zabývá se kontrolou filtrování podle: kategorie, značky a barvy v rámci hlavní stránky URL -> https://www.dm.cz/
+  
+Pre-conditions:
+  - Hlavní adresa -> https://www.dm.cz/
+  - Testujeme v prohlížeči Google Chrome - verze 122.0.6261.70
+  - Webová stránka je dostupná
+  - Připojení k internetu je dostupné
+
+
+Post-conditions:
+  - Po dokončení testovací sady je filtrování podle: kategorie, značky a barvy ověřeno.

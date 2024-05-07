@@ -1,0 +1,28 @@
+Název TC + ID:
+	TestCase_FE-214 – Kontrola filtrování recenzí
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme funkčnost filtrování recenzí u produktu na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/balea-men-balzam-po-holeni-energy-p4058172784774.html je dostupná.
+	- Recenze jsou viditelné.
+	
+Post-conditions:
+	- Po kliknutí na tlačítko "Seřadit podle" se recenze zobrazí podle zvoleného seřazení.
+
+Testovací kroky:
+1. Otevřeme stránku URL - https://www.dm.cz/balea-men-balzam-po-holeni-energy-p4058172784774.html. –> Bez problému.
+2. Zkontrolujeme zda-li je tlačítko "Seřadit podle" viditelné. -> Ano je viditelné.
+3. Klikneme na tlačítko "Seřadit podle" a zvolíme "Nejnovější". -> Bez problému. Recenze jsou aktualizovány a zobrazeny podle nejnovější.
+

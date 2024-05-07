@@ -1,0 +1,19 @@
+TestSada _FE-010 – Přihlašovací formulář
+
+Stručný popis:
+  Tahle testovací sada slouží k ověřené přihlašovacího formuláře sady (TestSada_FE-009 – Přihlášení). Sada zahrnuje kontrolu viditelnost formuláře, validace polí, zapomenutí hesla, zobrazení hesla, nevalidního přihlášení a přihlášení v rámci webové stránky URL -> https://www.dm.cz/
+  
+Pre-conditions:
+  - Hlavní adresa -> https://www.dm.cz/
+  - Testujeme v prohlížeči Google Chrome - verze 122.0.6261.70
+  - Webová stránka je dostupná
+  - Připojení k internetu je dostupné
+
+
+Post-conditions:
+  - Po dokončení testovací sady je přihlašovací formulář a všechny funkcionality spojené s formulářem ověřeny.
+  - Viditelnost formuláře je ověřena.
+  - Validace polí je ověřena.
+  - Zapomenutí hesla je ověřeno.
+  - Tlačítko pro zobrazení hesla je ověřeno.
+  - Přihlášení pro existující i neexistující účet je ověřeno.

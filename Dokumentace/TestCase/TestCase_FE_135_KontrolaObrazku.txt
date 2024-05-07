@@ -1,0 +1,26 @@
+Název TC + ID:
+	TestCase_FE-135 – Kontrola obrázků
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme viditelnost slideru na stránce.
+
+Pre-conditions:
+	- 
+	
+Post-conditions:
+	- Po ověření je slider viditelný.
+
+Testovací kroky:
+1. Otevřeme hlavní stránku URL - https://www.dm.cz/. –> Bez problému.
+2. Zkontrolujeme zda-li je slider viditelný. -> Je viditelný.
+

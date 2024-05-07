@@ -1,0 +1,25 @@
+Název TC + ID:
+	TestCase_FE-144 – Kontrola funkčnosti tlačítek (smajlíků)
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme funkčnost tlačítek (smajlíků) pro odeslání spokojenosti zákazníka na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/ je dostupná.
+	- Tlačítka jsou na hlavní stránce viditelná a dostupná.
+	
+Post-conditions:
+	- Po kliknutí na tlačítka je odesláno hodnocení stránky a zobrazení úspěšné zprávy.
+
+Testovací kroky:
+1. Klikneme na tlačítko (smajlíka) "Velký úsměv". -> Bez problému. Zobrazení úspěšné zprávy "Děkujeme za Vaši zpětnou vazbu!"

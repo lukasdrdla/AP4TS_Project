@@ -1,0 +1,14 @@
+TestSada_FE-009 – Přihlášení
+
+Stručný popis:
+  Tahle testovací sada slouží k ověření správného chování přihlášení sady (TestSada_FE-006 – Uživatelské přihlášení). Zabývá se kontrolou přihlášení v rámci hlavní stránky URL -> https://www.dm.cz/
+  
+Pre-conditions:
+  - Hlavní adresa -> https://www.dm.cz/
+  - Testujeme v prohlížeči Google Chrome - verze 122.0.6261.70
+  - Webová stránka je dostupná
+  - Připojení k internetu je dostupné
+
+
+Post-conditions:
+  - Po dokončení testovací sady je přihlášení a veškeré funkcionality spojené s přihlášením ověřeny.

@@ -1,0 +1,36 @@
+Název TC + ID:
+	TestCase_FE-126 – Kontrola nastavení newsletteru
+
+Autor: Lukáš Drdla
+Datum: 24.04.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme správnou funkčnost nastavení newsletteru uživatele na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/ je dostupná.
+	- Uživatel je přihlášen.
+	
+Post-conditions:
+	- Uživatel se přihlasí k odběru newsletteru, po kliknutí na tlačítko "Přhlásit se k odběru".
+
+Testovací kroky:
+1. Zkontrolujeme zda-li je ikonka "Moje dm zákaznické konto" v pravém rohu viditelné". -> Ikonka je viditelná.
+2. Klikneme na ikonku "Moje dm zákaznické konto". -> Nenastane problém.
+3. Zkontrolujeme přítomnost tlačítka "Můj newsletter". -> Je přítomné.
+4. Klikneme na tlačítko "Můj newsletter". -> Nenastane problém a přesměruje nás na další stránku.
+5. Zkontrolujeme přítomnost tlačítka "Přihlásit k newsletteru". -> Je přítomné.
+6. Klikneme na tlačítko "Přihlásit k newsletteru". -> Nenastane problém a zobrazí se PopUp.
+7. Zkontrolujeme přítomnost tlačítka "Přhlásit se k odběru". -> Je přítomné.
+8. Klikneme na tlačítko "Přhlásit se k odběru". -> Nenastane problém a uživatel se přihlási k odběru.
+
+
+
+

@@ -1,0 +1,17 @@
+TestSada _FE-008 – Registrační formulář
+
+Stručný popis:
+  Tahle testovací sada slouží k ověření registračního formuláře sady (TestSada_FE-007 – Registrace). Sada zahrnuje kontrolu viditelnost formuláře, validace polí a registrace v rámci webové stránky URL -> https://www.dm.cz/
+  
+Pre-conditions:
+  - Hlavní adresa -> https://www.dm.cz/
+  - Testujeme v prohlížeči Google Chrome - verze 122.0.6261.70
+  - Webová stránka je dostupná
+  - Připojení k internetu je dostupné
+
+
+Post-conditions:
+  - Po dokončení testovací sady je registrační formulář a všechny funkcionality spojené s formulářem ověřeny.
+  - Viditelnost formuláře je ověřena.
+  - Validace polí je ověřena.
+  - Registrace je ověřena.

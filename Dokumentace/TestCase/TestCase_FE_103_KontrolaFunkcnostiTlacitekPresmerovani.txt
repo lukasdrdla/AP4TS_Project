@@ -1,0 +1,27 @@
+Název TC + ID:
+	TestCase_FE-103 – Kontrola funkčnosti tlačítek (přesměrování)
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme správnou funkcionalitu tlačítek hlavního menu na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/ je dostupná.
+	- Navigační menu je viditelné a dostupné.
+	
+Post-conditions:
+	- Po kliknutí na tlačítka je uživatel přesměrován na danou podstránku.
+
+Testovací kroky:
+1. Zkontrolujeme přítomnost tlačítek menu. -> Jsou viditelná.
+2. Klikneme na tlačítko "Líčení". -> Bez problému. Přesměrování na https://www.dm.cz/dekorativni-kosmetika.
+

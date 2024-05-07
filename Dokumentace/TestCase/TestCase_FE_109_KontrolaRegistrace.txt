@@ -1,0 +1,36 @@
+Název TC + ID:
+	TestCase_FE-109 – Kontrola Registrace
+
+Autor: Lukáš Drdla
+Datum: 01.03.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme správnou funkčnost registračního formuláře.
+
+Pre-conditions:
+	- Stránka s registračním formulářem je viditelná a dostupná.
+	- Uživatel není již zaregistrovaný.
+	
+Post-conditions:
+	- Uživatel obdrží potvrzovací e-mail.
+
+Testovací kroky:
+1. Zkontrolujeme zda-li je ikonka ""Moje dm zákaznické konto" v pravém rohu viditelné. -> Ikonka je viditelná.
+2. Klikneme na ikonku "Moje dm zákaznické konto". -> Nenastane problém.
+3. Zkontrolujeme přítomnost tlačítka "Registrovat se". -> Je přítomné.
+4. Klikneme na tlačítko "Registrovat se". -> Nenastane problém a přesměruje nás na další stránku.
+5. Zkontrolujeme viditelnost všech polí formuláře. -> Jsou přítomné.
+6. Vyplníme formulář s validním e-mailem ("kolarfranta060@gmail.com") -> Nenastane problém.
+7. Vyplníme formulář s validním heslem("kolarfranta060") -> Nenastane problém.
+8. Zkontrolujeme přítomnost tlačítka "Registrace" -> Je viditelné.
+9. Klikneme na tlačítko "Registrace" -> Nenastane problem. Přesměrování na další stránku.
+
+
+

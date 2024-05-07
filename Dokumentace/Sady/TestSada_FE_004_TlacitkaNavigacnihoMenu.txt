@@ -1,0 +1,16 @@
+TestSada_FE-004 – Tlačítka navigačního menu
+
+Stručný popis:
+ Sada se zaměřuje na kontrolu tlačítek navigačního menu v rámci sady (TestSada_FE-003 – Navigační menu). Zabývá se kontrolou tlačítek a jejich funkčnosti v rámci hlavní stránky URL -> https://www.dm.cz/
+  
+Pre-conditions:
+  - Hlavní adresa -> https://www.dm.cz/
+  - Testujeme v prohlížeči Google Chrome - verze 122.0.6261.70
+  - Webová stránka je dostupná
+  - Připojení k internetu je dostupné
+
+
+Post-conditions:
+  - Po dokončení testovací sady jsou tlačítku menu a veškeré funkcionality spojené s tlačítky ověřeny.
+  - Tlačítka jsou viditelná.
+  - Funkčnost tlačítek je ověřena. (Přesměrování)

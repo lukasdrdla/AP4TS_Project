@@ -1,0 +1,26 @@
+Název TC + ID:
+	TestCase_FE-102 – Kontrola viditelnosti tlačítek navigačního menu
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme viditelnost tlačítek hlavního menu na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/ je dostupná.
+	- Webová stránka obsahuje navigační menu.
+	
+Post-conditions:
+	- Po zkontrolování jsou tlačítka menu viditelná.
+
+Testovací kroky:
+1. Zkontrolujeme přítomnost tlačítek hlavního menu. -> Jsou viditelná.
+

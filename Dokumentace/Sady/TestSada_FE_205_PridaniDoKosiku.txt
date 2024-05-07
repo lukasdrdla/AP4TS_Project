@@ -1,0 +1,15 @@
+TestSada_FE-205 – Přidání do košíku
+
+Stručný popis:
+  Tahle testovací sada slouží k ověření správného chování přidání do košíku v rámci BuyBoxu. Zabývá se kontrolou zobrazení ceny, tlačítka pro úpravu množství a tlačítka pro přidání do košíku u produktu v rámci hlavní stránky URL -> https://www.dm.cz/
+  
+Pre-conditions:
+  - Hlavní adresa -> https://www.dm.cz/
+  - Adresa produktu -> https://www.dm.cz/balea-men-balzam-po-holeni-energy-p4058172784774.html
+  - Testujeme v prohlížeči Google Chrome - verze 122.0.6261.70
+  - Webová stránka je dostupná
+  - Připojení k internetu je dostupné
+
+
+Post-conditions:
+  - Po dokončení testovací sady je přidání do košíku v rámci BuyBoxu a veškeré funkcionality spojené s košíkem ověřeny. (Zobrazení ceny, tlačítko pro úpravu množství, tlačítko pro přidání do košíku)

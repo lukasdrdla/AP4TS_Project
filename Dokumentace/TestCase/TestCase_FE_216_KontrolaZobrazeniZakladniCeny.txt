@@ -1,0 +1,25 @@
+Název TC + ID:
+	TestCase_FE-216 – Kontrola zobrazení základní ceny
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme viditelnost základní ceny u produktu na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/balea-men-balzam-po-holeni-energy-p4058172784774.html je dostupná.
+	
+Post-conditions:
+	- Po ověření je "Celková cena" u produktu viditelné.
+
+Testovací kroky:
+1. Otevřeme stránku URL - https://www.dm.cz/balea-men-balzam-po-holeni-energy-p4058172784774.html. –> Bez problému.
+2. Zkontrolujeme zda-li je "Celková cena" viditelná. -> Ano je viditelná.

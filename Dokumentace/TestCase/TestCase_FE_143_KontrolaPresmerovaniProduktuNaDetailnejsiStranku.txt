@@ -1,0 +1,25 @@
+Název TC + ID:
+	TestCase_FE-143 – Kontrola přesměrování produktu (na detailnější stránku)
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme funkčnost (přesměrování) na podrobnější podstránku produktu na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/ je dostupná.
+	- Sekce "Nově v sortimentu" je na hlavní stránce viditelná a dostupná.
+	
+Post-conditions:
+	- Po kliknutí na produkt je uživatel přesměrován na podstránku.
+
+Testovací kroky:
+1. Klikneme na produkt "Toaletní papír". -> Přesměrování na podstránku URL - https://www.dm.cz/harmony-toaletni-papir-bob-a-bobek-soft-white-3vrstvy-8x132-p8584014818964.html

@@ -1,0 +1,29 @@
+Název TC + ID:
+	TestCase_FE-133 – Kontrola celkové ceny v košíku.
+
+Autor: Lukáš Drdla
+Datum: 24.04.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme správné zobrazení celkové ceny v košíku na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/ je dostupná.
+	- Uživatel již přidal produkt do košíku.
+	
+Post-conditions:
+	- Uživateli se zobrazí celková cena v košíku.
+
+Testovací kroky:
+1. Zkontrolujeme přítomnost ikonky "Nákupní košík" v právem horním rohu -> Je viditelné.
+2. Klikneme na ikonku "Nákupní košík" -> Nenastane problem. Přesměrování.
+3. Zkontrolujeme přítomnost celkové ceny "Celkem k úhradě" -> Je viditelné. Cena se zobrazuje správně.
+
+

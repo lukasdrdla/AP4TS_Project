@@ -1,0 +1,26 @@
+Název TC + ID:
+	TestCase_FE-135 – Kontrola obrázků
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme viditelnost obrázků produktu na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/balea-men-balzam-po-holeni-energy-p4058172784774.html je dostupná.
+	
+Post-conditions:
+	- Po ověření jsou obrázky produktu viditelný.
+
+Testovací kroky:
+1. Otevřeme stránku URL - https://www.dm.cz/balea-men-balzam-po-holeni-energy-p4058172784774.html. –> Bez problému.
+2. Zkontrolujeme zda-li je slider s obrázky viditelný. -> Je viditelný.
+

@@ -1,0 +1,17 @@
+TestSada_FE-021 – Všechny kategorie
+
+Stručný popis:
+  Tahle testovací sada slouží k ověření správného chování sekce "Všechny kategorie" na hlavní stránce. Zabývá se kontrolou kategorií, funkčnosti odkazů a obsahu kategorií v rámci hlavní stránky URL -> https://www.dm.cz/
+  
+Pre-conditions:
+  - Hlavní adresa -> https://www.dm.cz/
+  - Testujeme v prohlížeči Google Chrome - verze 122.0.6261.70
+  - Webová stránka je dostupná
+  - Připojení k internetu je dostupné
+
+
+Post-conditions:
+  - Po dokončení testovací sady je sekce kategorie a veškeré funkcionality spojené s ní ověřeny. 
+  - (Viditelnost kategorií je ověřeno
+  - Přesměrování je ověřeno
+  - Obsah kategorií je ověřen.

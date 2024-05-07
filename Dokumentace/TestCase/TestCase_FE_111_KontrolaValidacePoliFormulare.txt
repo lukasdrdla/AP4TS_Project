@@ -1,0 +1,36 @@
+Název TC + ID:
+	TestCase_FE-111 – Kontrola validace polí formuláře
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme validaci polí přihlašovacího formuláře na stránce.
+
+Pre-conditions:
+	- Stránka s přihlašovacím formulářem je viditelná a dostupná.
+	
+Post-conditions:
+	- Po ověření jsou pole funkční.
+
+Testovací kroky:
+1. Zkontrolujeme zda-li je ikonka ""Moje dm zákaznické konto" v pravém rohu viditelné. -> Ikonka je viditelná.
+2. Klikneme na ikonku "Moje dm zákaznické konto". -> Nenastane problém.
+3. Zkontrolujeme přítomnost tlačítka "Přihlášení". -> Je přítomné.
+4. Klikneme na tlačítko "Přihlášení". -> Nenastane problém a přesměruje nás na další stránku.
+5. Zkontrolujeme viditelnost všech polí formuláře. -> Jsou přítomné.
+6. Vyplníme formulář s e-mailem ("??") -> Bez problému, lze vypsat do pole.
+7. Vyplníme formulář s heslem ("??") -> Bez problému, lze vypsat do pole.
+8. Zkontrolujeme přítomnost tlačítka "Přihlášení" -> Je viditelné.
+17. Klikneme na tlačítko "Přihlášení" -> Nastane problém. Zobrazí se chybové hlášení u polí.
+
+
+
+

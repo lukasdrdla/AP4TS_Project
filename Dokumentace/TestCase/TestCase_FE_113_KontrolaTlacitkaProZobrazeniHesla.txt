@@ -1,0 +1,35 @@
+Název TC + ID:
+	TestCase_FE-113 – Kontrola tlačítka pro zobrazení hesla
+
+Autor: Lukáš Drdla
+Datum: 01.03.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme správnou funkčnost přihlašovacího formuláře.
+
+Pre-conditions:
+	- Stránka s přihlašovacím formulářem je viditelná a dostupná.
+	- Uživatel je již zaregistrovaný.
+	
+Post-conditions:
+	- Uživatel se bez problému přihlásí.
+
+Testovací kroky:
+1. Zkontrolujeme zda-li je ikonka ""Moje dm zákaznické konto" v pravém rohu viditelné. -> Ikonka je viditelná.
+2. Klikneme na ikonku "Moje dm zákaznické konto". -> Nenastane problém.
+3. Zkontrolujeme přítomnost tlačítka "Přihlášení". -> Je přítomné.
+4. Klikneme na tlačítko "Přihlášení". -> Nenastane problém a přesměruje nás na další stránku.
+5. Zkontrolujeme viditelnost všech polí formuláře. -> Jsou přítomné.
+7. Vyplníme formulář s heslem("kolarfranta060") -> Nenastane problém.
+8. Zkontrolujeme přítomnost ikonky "Zobrazit heslo" -> Je viditelné.
+9. Klikneme na ikonku "Zobrazit heslo" -> Heslo se zobrazí.
+
+
+

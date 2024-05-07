@@ -1,0 +1,27 @@
+Název TC + ID:
+	TestCase_FE-118 – Kontrola vyhledávání podle polohy
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme funkčnost vyhledání prodejen podle polohy na stránce.
+
+Pre-conditions:
+	- Stránka s vyhledávání prodej je viditelná a dostupná.
+	
+Post-conditions:
+	- Po kliknutí na tlačítko "Moje poloha" se zobrazí obchody v nejbližším okolím.
+
+Testovací kroky:
+1. Zkontrolujeme zda-li je ikonka "Store" v pravém rohu viditelné. -> Ikonka je viditelná.
+2. Klikneme na ikonku "Store". -> Nenastane problém. Přesměrování na stránku URL - https://www.dm.cz/store
+3. Zkontrolujeme zda-li je tlačítko "Zjistit vaši polohu" v pravo od pole viditelné. -> Tlačítko je viditelné.
+4. Klikneme na tlačítko "Zjistit vaši polohu". -> Nenastane problém a zobrazí se nejbližší prodejny v okolí.

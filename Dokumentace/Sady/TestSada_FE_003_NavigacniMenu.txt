@@ -1,0 +1,17 @@
+TestSada_FE-003 – Navigační menu
+
+Stručný popis:
+  Tahle testovací sada slouží k ověřené správného chování hlavního navigačního menu. Zabývá se kontrolou tlačítek, vyhledávání, interakce tlačítek v rámci hlavní stránky URL -> https://www.dm.cz/
+  
+Pre-conditions:
+  - Hlavní adresa -> https://www.dm.cz/
+  - Testujeme v prohlížeči Google Chrome - verze 122.0.6261.70
+  - Webová stránka je dostupná
+  - Připojení k internetu je dostupné
+
+
+Post-conditions:
+  - Po dokončení testovací sady je navigační menu a veškeré funkcionality spojené s menu ověřeny.
+  - Tlačítka menu jsou ověřena.
+  - Vyhledávací pole je ověřeno.
+

@@ -1,0 +1,25 @@
+Název TC + ID:
+	TestCase_FE-150 – Kontrola favicon na stránce
+
+Autor: Lukáš Drdla
+Datum: 24.04.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme přítomnost favicon na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/ je dostupná.
+	
+Post-conditions:
+	- Všechny favicon jsou na stránce zobrazeny.
+
+Testovací kroky:
+1. Otevřeme hlavní stránku URL - https://www.dm.cz/. -> Bez problému.
+2. Pozorujeme favicon zda-li jsou správně zobrazeny. -> Jsou viditelné a dostupné.

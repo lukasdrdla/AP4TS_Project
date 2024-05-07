@@ -1,0 +1,14 @@
+TestSada_FE-017 – Můj newsletter
+
+Stručný popis:
+  Tahle testovací sada slouží k ověření správného chování při nastavení newsletteru uživatele v rámci hlavní stránky URL -> https://www.dm.cz/
+  
+Pre-conditions:
+  - Hlavní adresa -> https://www.dm.cz/
+  - Testujeme v prohlížeči Google Chrome - verze 122.0.6261.70
+  - Webová stránka je dostupná
+  - Připojení k internetu je dostupné
+
+
+Post-conditions:
+  - Po dokončení testovací sady je nastavení newsletteru uživatele ověřeno.

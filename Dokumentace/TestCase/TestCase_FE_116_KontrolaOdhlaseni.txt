@@ -1,0 +1,30 @@
+Název TC + ID:
+	TestCase_FE-116 – Kontrola odhlášení
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme správnou funkcionalitu odhlášení uživatele na stránce.
+
+Pre-conditions:
+	- Uživatel je přihlášen.
+	
+Post-conditions:
+	- Uživatel se bez problému odhlásí.
+
+Testovací kroky:
+1. Zkontrolujeme zda-li je ikonka ""Moje dm zákaznické konto" v pravém rohu viditelné. -> Ikonka je viditelná.
+2. Klikneme na ikonku "Moje dm zákaznické konto". -> Nenastane problém.
+3. Zkontrolujeme přítomnost tlačítka "Odhlásit". -> Je přítomné.
+4. Klikneme na tlačítko "Odhlásit". -> Nenastane problém a uživatel je odhlášen.
+
+
+

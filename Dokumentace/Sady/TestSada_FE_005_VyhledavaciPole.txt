@@ -1,0 +1,18 @@
+TestSada_FE-005 – Vyhledávací pole
+
+Stručný popis:
+ Testovací sada se zaměřuje na správnost chování vyhledávacího pole v rámci sady (TestSada_FE-003 – Navigační menu). Zabývá se kontrolou vyhledávacího pole, funkčnosti a relevance výsledků v rámci hlavní stránky URL -> https://www.dm.cz/
+
+  
+Pre-conditions:
+  - Hlavní adresa -> https://www.dm.cz/
+  - Testujeme v prohlížeči Google Chrome - verze 122.0.6261.70
+  - Webová stránka je dostupná
+  - Připojení k internetu je dostupné
+
+
+Post-conditions:
+  - Po dokončení testovací sady je vyhledávací pole a veškeré funkcionality spojené s polem ověřeny.
+  - Pole je viditelné.
+  - Funkčnost pole je ověřena. (Vyhledávání)
+  - Relevance výsledků je ověřena.

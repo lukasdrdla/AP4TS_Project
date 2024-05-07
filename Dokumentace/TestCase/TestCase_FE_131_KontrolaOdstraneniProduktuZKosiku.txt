@@ -1,0 +1,29 @@
+Název TC + ID:
+	TestCase_FE-131 – Kontrola odstranění produktu z košíku
+
+Autor: Lukáš Drdla
+Datum: 24.04.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme správnou funkčnost odebrání produktů z košíku na stránce.
+
+Pre-conditions:
+	- Webová stránka https://www.dm.cz/ je dostupná.
+	- Uživatel již přidal produkt do košíku.
+	
+Post-conditions:
+	- Uživatel odebere produkt z košíku po kliknutí na tlačítko "Odstranit".
+
+Testovací kroky:
+1. Zkontrolujeme přítomnost ikonky "Nákupní košík" v právem horním rohu -> Je viditelné.
+2. Klikneme na ikonku "Nákupní košík" -> Nenastane problem. Přesměrování.
+3. Zkontrolujeme přítomnost tlačítka "Odstranit" -> Je viditelné.
+4. Klikneme na tlačítko "Odstranit" -> Nenastane problem. Produkt je odebrán z košíku.
+

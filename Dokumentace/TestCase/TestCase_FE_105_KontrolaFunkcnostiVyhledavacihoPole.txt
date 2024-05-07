@@ -1,0 +1,29 @@
+Název TC + ID:
+	TestCase_FE-105 – Kontrola funkčnosti vyhledávacího pole
+
+Autor: Lukáš Drdla
+Datum: 20.4.2024
+Priorita: Smoke testy
+
+Typ testu:
+	- Manuální + Automatizovaný
+
+Očekávaný výsledek:
+	- Všechny očekávané výsledky v rámci koků jsou splněny a nebyl v nich nalezen problém.
+
+Stručný popis:
+	- Testujeme a kontrolujeme správnou funkcionalitu vyhledávajícího pole na stránce.
+
+Pre-conditions:
+	- Webová stránka obsahuje vyhledávací pole.
+
+Post-conditions:
+	- Po vyhledání se zobrazí stránka s výsledky hledání.
+
+Testovací kroky:
+1. Otevřeme hlavní stránku webu https://www.dm.cz/ -> Bez problému.
+2. Zkontrolujeme přítomnost vyhledávajícího pole. -> Je viditelné.
+3. Klikneme do pole. -> Bez problému.
+4. Napíšeme hledaný výraz "Sprchový gel". -> Bez problému lze psát do pole.
+5. Klikneme na tlačítko vyhledat, nebo zmáčkneme klávesu "Enter" -> Přesměrování na stránku s výsledky.
+
