@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.7.2 on win32)" generated="20240507 16:50:48.977" rpa="false" schemaversion="4">
+<suite id="s1" name="TestSada FE 015 MojeUdaje" source="C:\Users\lukas_IT\Desktop\TS_Projekt_V2\Robot\TestSada_100-HlavniStranka\TestSada_FE_001_TestovaniFrontEnd\TestSada_FE_013_SpravaProfilu\TestSada_FE_014_MujProfil\TestSada_FE_015_MojeUdaje">
+<suite id="s1-s1" name="KontrolaUpravyOsobnichUdaju" source="C:\Users\lukas_IT\Desktop\TS_Projekt_V2\Robot\TestSada_100-HlavniStranka\TestSada_FE_001_TestovaniFrontEnd\TestSada_FE_013_SpravaProfilu\TestSada_FE_014_MujProfil\TestSada_FE_015_MojeUdaje\KontrolaUpravyOsobnichUdaju.robot">
+<test id="s1-s1-t1" name="Pre-Conditions" line="11">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.4</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240507 16:50:49.283" endtime="20240507 16:50:49.284"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${ProhlizecChrome}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240507 16:50:49.285" level="INFO">Opening browser 'Chrome' to base url 'https://www.dm.cz/'.</msg>
+<status status="PASS" starttime="20240507 16:50:49.284" endtime="20240507 16:50:52.266"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240507 16:50:52.267" endtime="20240507 16:50:52.804"/>
+</kw>
+<kw name="Wait Until Location Is" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" starttime="20240507 16:50:52.804" endtime="20240507 16:50:53.217"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CookieButton}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:50:53.218" endtime="20240507 16:50:54.068"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CookieButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:50:54.069" level="INFO">Clicking element 'dom:document.querySelector("#usercentrics-root").shadowRoot.querySelector("div[data-nosnippet='1'] .sc-aXZVg.jTGmCV div div .sc-dLMFU.QpAxQ .sc-eDPEul.jgnOsR .sc-kdBSHD.hwjBDA .sc-tagGq.rKCAx .sc-dtBdUo.fzvttm .sc-dcJsrY.idAmLR")'.</msg>
+<status status="PASS" starttime="20240507 16:50:54.069" endtime="20240507 16:50:54.964"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ClosePopUp}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:50:54.965" endtime="20240507 16:50:55.873"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ClosePopUp}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:50:55.874" level="INFO">Clicking element '//button[@title='Zavřít']'.</msg>
+<status status="PASS" starttime="20240507 16:50:55.873" endtime="20240507 16:50:56.785"/>
+</kw>
+<kw name="Prihlasit">
+<arg>kolarfranta060@gmail.com</arg>
+<arg>kolarfranta060</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${MyAccount}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:50:56.787" endtime="20240507 16:50:57.638"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MyAccount}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:50:57.639" level="INFO">Clicking element '//button[@aria-label='Moje dm zákaznické konto']'.</msg>
+<status status="PASS" starttime="20240507 16:50:57.638" endtime="20240507 16:50:58.504"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LoginButton}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:50:58.504" endtime="20240507 16:50:59.361"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LoginButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:50:59.362" level="INFO">Clicking element '//button[@id='login-button']'.</msg>
+<status status="PASS" starttime="20240507 16:50:59.361" endtime="20240507 16:51:00.734"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LoginForm}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:51:00.734" endtime="20240507 16:51:01.625"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${LoginForm}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240507 16:51:02.456" level="INFO">Element '//form[@id='login-form']' is displayed.</msg>
+<status status="PASS" starttime="20240507 16:51:01.625" endtime="20240507 16:51:02.456"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EmailInput}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240507 16:51:02.457" level="INFO">Typing text 'kolarfranta060@gmail.com' into text field '//input[@id='emailAddress-input']'.</msg>
+<status status="PASS" starttime="20240507 16:51:02.456" endtime="20240507 16:51:03.910"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PasswordInput}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240507 16:51:03.911" level="INFO">Typing text 'kolarfranta060' into text field '//input[@id='password-input']'.</msg>
+<status status="PASS" starttime="20240507 16:51:03.910" endtime="20240507 16:51:05.296"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SubmitButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:51:05.297" level="INFO">Clicking element '//button[@id='login-button']'.</msg>
+<status status="PASS" starttime="20240507 16:51:05.296" endtime="20240507 16:51:06.162"/>
+</kw>
+<status status="PASS" starttime="20240507 16:50:56.786" endtime="20240507 16:51:06.162"/>
+</kw>
+<status status="PASS" starttime="20240507 16:50:49.282" endtime="20240507 16:51:06.163"/>
+</test>
+<test id="s1-s1-t2" name="TestCase_FE-121 – Kontrola úpravy osobních údajů" line="23">
+<kw name="KontrolaUpravyOsobnichUdaju">
+<arg>Franta</arg>
+<arg>Kolar</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${MyAccount}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:51:06.166" endtime="20240507 16:51:08.542"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MyAccount}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:51:08.544" level="INFO">Clicking element '//button[@aria-label='Moje dm zákaznické konto']'.</msg>
+<status status="PASS" starttime="20240507 16:51:08.542" endtime="20240507 16:51:09.447"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${MyProfil}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:51:09.447" endtime="20240507 16:51:10.296"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${My Profil}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:51:10.297" level="INFO">Clicking element '//a[contains(text(),'Můj profil')]'.</msg>
+<status status="PASS" starttime="20240507 16:51:10.296" endtime="20240507 16:51:11.385"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${MyPersonalInformation}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:51:11.385" endtime="20240507 16:51:12.849"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MyPersonalInformation}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:51:12.850" level="INFO">Clicking element '//a[@data-dmid='kundenkonto-profile-customerData-link']//div[@class='c ds bh ae dt y']'.</msg>
+<status status="PASS" starttime="20240507 16:51:12.850" endtime="20240507 16:51:13.723"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${EditPersonalInfo}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:51:13.724" endtime="20240507 16:51:14.562"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${EditPersonalInfo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:51:14.563" level="INFO">Clicking element '//div[@data-dmid='dm-customer-data-personal-data']//button[@id='dm-button']'.</msg>
+<status status="PASS" starttime="20240507 16:51:14.562" endtime="20240507 16:51:15.450"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${FirstNameInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:51:15.450" endtime="20240507 16:51:16.278"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${FirstNameInput}</arg>
+<arg>${firstName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240507 16:51:16.279" level="INFO">Typing text 'Franta' into text field '//input[@id='firstName-input']'.</msg>
+<status status="PASS" starttime="20240507 16:51:16.278" endtime="20240507 16:51:17.656"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${LastNameInput}</arg>
+<arg>${lastName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240507 16:51:17.657" level="INFO">Typing text 'Kolar' into text field '//input[@id='lastName-input']'.</msg>
+<status status="PASS" starttime="20240507 16:51:17.656" endtime="20240507 16:51:19.028"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SaveButtonPI}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:51:19.029" level="INFO">Clicking element '//button[@id='dm-customer-data-submit']'.</msg>
+<status status="PASS" starttime="20240507 16:51:19.028" endtime="20240507 16:51:19.904"/>
+</kw>
+<status status="PASS" starttime="20240507 16:51:06.166" endtime="20240507 16:51:19.904"/>
+</kw>
+<status status="PASS" starttime="20240507 16:51:06.165" endtime="20240507 16:51:19.905"/>
+</test>
+<test id="s1-s1-t3" name="Post-conditions" line="26">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240507 16:51:19.908" endtime="20240507 16:51:22.401"/>
+</kw>
+<status status="PASS" starttime="20240507 16:51:19.907" endtime="20240507 16:51:22.402"/>
+</test>
+<status status="PASS" starttime="20240507 16:50:49.009" endtime="20240507 16:51:22.404"/>
+</suite>
+<status status="PASS" starttime="20240507 16:50:48.979" endtime="20240507 16:51:22.407"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="TestSada FE 015 MojeUdaje">TestSada FE 015 MojeUdaje</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="KontrolaUpravyOsobnichUdaju">TestSada FE 015 MojeUdaje.KontrolaUpravyOsobnichUdaju</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

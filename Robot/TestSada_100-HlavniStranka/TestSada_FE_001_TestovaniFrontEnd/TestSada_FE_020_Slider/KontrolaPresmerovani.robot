@@ -29,4 +29,4 @@ Post-conditions
 KontrolaPresmerovani
     Wait Until Element Is Visible    ${Slider}
     Element Should Be Visible    ${Slider}
-    Click Element    ${FirstSlide}
+    Click Element    ${Slider}

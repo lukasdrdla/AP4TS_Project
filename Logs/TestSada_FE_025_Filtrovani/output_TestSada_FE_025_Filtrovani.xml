@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.7.2 on win32)" generated="20240507 16:23:19.553" rpa="false" schemaversion="4">
+<suite id="s1" name="TestSada FE 025 Filtrovani" source="C:\Users\lukas_IT\Desktop\TS_Projekt_V2\Robot\TestSada_100-HlavniStranka\TestSada_FE_001_TestovaniFrontEnd\TestSada_FE_025_Filtrovani">
+<suite id="s1-s1" name="KontrolaFiltrovaniPodleBarvy" source="C:\Users\lukas_IT\Desktop\TS_Projekt_V2\Robot\TestSada_100-HlavniStranka\TestSada_FE_001_TestovaniFrontEnd\TestSada_FE_025_Filtrovani\KontrolaFiltrovaniPodleBarvy.robot">
+<test id="s1-s1-t1" name="Pre-Conditions" line="13">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.4</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240507 16:23:19.849" endtime="20240507 16:23:19.849"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${ProhlizecChrome}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240507 16:23:19.850" level="INFO">Opening browser 'Chrome' to base url 'https://www.dm.cz/'.</msg>
+<status status="PASS" starttime="20240507 16:23:19.850" endtime="20240507 16:23:23.298"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240507 16:23:23.299" endtime="20240507 16:23:23.901"/>
+</kw>
+<kw name="Wait Until Location Is" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" starttime="20240507 16:23:23.902" endtime="20240507 16:23:24.322"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CookieButton}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:23:24.323" endtime="20240507 16:23:25.170"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CookieButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:23:25.171" level="INFO">Clicking element 'dom:document.querySelector("#usercentrics-root").shadowRoot.querySelector("div[data-nosnippet='1'] .sc-aXZVg.jTGmCV div div .sc-dLMFU.QpAxQ .sc-eDPEul.jgnOsR .sc-kdBSHD.hwjBDA .sc-tagGq.rKCAx .sc-dtBdUo.fzvttm .sc-dcJsrY.idAmLR")'.</msg>
+<status status="PASS" starttime="20240507 16:23:25.171" endtime="20240507 16:23:26.082"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ClosePopUp}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:23:26.083" endtime="20240507 16:23:26.944"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ClosePopUp}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:23:26.945" level="INFO">Clicking element '//button[@title='Zavřít']'.</msg>
+<status status="PASS" starttime="20240507 16:23:26.945" endtime="20240507 16:23:27.873"/>
+</kw>
+<status status="PASS" starttime="20240507 16:23:19.848" endtime="20240507 16:23:27.873"/>
+</test>
+<test id="s1-s1-t2" name="TestCase_FE-149 – Kontrola filtrování podle barvy" line="23">
+<kw name="KontrolaFiltrovaniPodleBarvy">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${MensWorld}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:23:27.876" endtime="20240507 16:23:28.719"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MensWorld}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:23:28.720" level="INFO">Clicking element '//a[@title="Men's World"]'.</msg>
+<status status="PASS" starttime="20240507 16:23:28.719" endtime="20240507 16:23:29.644"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Filters}</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240507 16:23:29.644" endtime="20240507 16:23:30.124"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${Filters}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20240507 16:23:30.124" endtime="20240507 16:23:31.240"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${Filters}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240507 16:23:32.095" level="INFO">Element '//nav[@aria-label='Filtrovat']' is displayed.</msg>
+<status status="PASS" starttime="20240507 16:23:31.240" endtime="20240507 16:23:32.095"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${Color}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240507 16:23:32.939" level="INFO">Element '//button[normalize-space()='Barva']' is displayed.</msg>
+<status status="PASS" starttime="20240507 16:23:32.095" endtime="20240507 16:23:32.939"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Color}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:23:32.940" level="INFO">Clicking element '//button[normalize-space()='Barva']'.</msg>
+<status status="PASS" starttime="20240507 16:23:32.939" endtime="20240507 16:23:33.837"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${ColorBlue}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240507 16:23:33.837" endtime="20240507 16:23:34.264"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${ColorBlue}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20240507 16:23:34.264" endtime="20240507 16:23:35.381"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ColorBlue}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:23:35.382" level="INFO">Clicking element '//img[@alt='Filtr: modrá']'.</msg>
+<status status="PASS" starttime="20240507 16:23:35.381" endtime="20240507 16:23:36.325"/>
+</kw>
+<status status="PASS" starttime="20240507 16:23:27.876" endtime="20240507 16:23:36.325"/>
+</kw>
+<status status="PASS" starttime="20240507 16:23:27.875" endtime="20240507 16:23:36.326"/>
+</test>
+<test id="s1-s1-t3" name="Post-conditions" line="26">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240507 16:23:36.328" endtime="20240507 16:23:38.843"/>
+</kw>
+<status status="PASS" starttime="20240507 16:23:36.327" endtime="20240507 16:23:38.844"/>
+</test>
+<status status="PASS" starttime="20240507 16:23:19.587" endtime="20240507 16:23:38.846"/>
+</suite>
+<suite id="s1-s2" name="KontrolaFiltrovaniPodleKategorie" source="C:\Users\lukas_IT\Desktop\TS_Projekt_V2\Robot\TestSada_100-HlavniStranka\TestSada_FE_001_TestovaniFrontEnd\TestSada_FE_025_Filtrovani\KontrolaFiltrovaniPodleKategorie.robot">
+<test id="s1-s2-t1" name="Pre-Conditions" line="13">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.4</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240507 16:23:38.856" endtime="20240507 16:23:38.856"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${ProhlizecChrome}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240507 16:23:38.857" level="INFO">Opening browser 'Chrome' to base url 'https://www.dm.cz/'.</msg>
+<status status="PASS" starttime="20240507 16:23:38.857" endtime="20240507 16:23:42.093"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240507 16:23:42.094" endtime="20240507 16:23:42.552"/>
+</kw>
+<kw name="Wait Until Location Is" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" starttime="20240507 16:23:42.553" endtime="20240507 16:23:43.051"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CookieButton}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:23:43.052" endtime="20240507 16:23:43.895"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CookieButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:23:43.895" level="INFO">Clicking element 'dom:document.querySelector("#usercentrics-root").shadowRoot.querySelector("div[data-nosnippet='1'] .sc-aXZVg.jTGmCV div div .sc-dLMFU.QpAxQ .sc-eDPEul.jgnOsR .sc-kdBSHD.hwjBDA .sc-tagGq.rKCAx .sc-dtBdUo.fzvttm .sc-dcJsrY.idAmLR")'.</msg>
+<status status="PASS" starttime="20240507 16:23:43.895" endtime="20240507 16:23:44.783"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ClosePopUp}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:23:44.784" endtime="20240507 16:23:45.678"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ClosePopUp}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:23:45.679" level="INFO">Clicking element '//button[@title='Zavřít']'.</msg>
+<status status="PASS" starttime="20240507 16:23:45.679" endtime="20240507 16:23:46.598"/>
+</kw>
+<status status="PASS" starttime="20240507 16:23:38.855" endtime="20240507 16:23:46.599"/>
+</test>
+<test id="s1-s2-t2" name="TestCase_FE-147 – Kontrola filtrování podle kategorie" line="23">
+<kw name="KontrolaFiltrovaniPodleKategorie">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${MensWorld}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:23:46.602" endtime="20240507 16:23:47.449"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MensWorld}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:23:47.451" level="INFO">Clicking element '//a[@title="Men's World"]'.</msg>
+<status status="PASS" starttime="20240507 16:23:47.450" endtime="20240507 16:23:48.359"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Filters}</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240507 16:23:48.359" endtime="20240507 16:23:48.830"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${Filters}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20240507 16:23:48.830" endtime="20240507 16:23:49.931"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${Filters}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240507 16:23:50.768" level="INFO">Element '//nav[@aria-label='Filtrovat']' is displayed.</msg>
+<status status="PASS" starttime="20240507 16:23:49.931" endtime="20240507 16:23:50.768"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${Category}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240507 16:23:51.613" level="INFO">Element '//button[normalize-space()='Kategorie']' is displayed.</msg>
+<status status="PASS" starttime="20240507 16:23:50.768" endtime="20240507 16:23:51.613"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Category}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:23:51.614" level="INFO">Clicking element '//button[normalize-space()='Kategorie']'.</msg>
+<status status="PASS" starttime="20240507 16:23:51.613" endtime="20240507 16:23:52.502"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CategoryMen}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:23:52.502" endtime="20240507 16:23:53.345"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CategoryMen}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:23:53.346" level="INFO">Clicking element '//span[@aria-label='Filtr: MEN´S World']'.</msg>
+<status status="PASS" starttime="20240507 16:23:53.345" endtime="20240507 16:23:54.324"/>
+</kw>
+<status status="PASS" starttime="20240507 16:23:46.602" endtime="20240507 16:23:54.324"/>
+</kw>
+<status status="PASS" starttime="20240507 16:23:46.601" endtime="20240507 16:23:54.325"/>
+</test>
+<test id="s1-s2-t3" name="Post-conditions" line="26">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240507 16:23:54.326" endtime="20240507 16:23:56.835"/>
+</kw>
+<status status="PASS" starttime="20240507 16:23:54.326" endtime="20240507 16:23:56.836"/>
+</test>
+<status status="PASS" starttime="20240507 16:23:38.848" endtime="20240507 16:23:56.838"/>
+</suite>
+<suite id="s1-s3" name="KontrolaFiltrovaniPodleZnacky" source="C:\Users\lukas_IT\Desktop\TS_Projekt_V2\Robot\TestSada_100-HlavniStranka\TestSada_FE_001_TestovaniFrontEnd\TestSada_FE_025_Filtrovani\KontrolaFiltrovaniPodleZnacky.robot">
+<test id="s1-s3-t1" name="Pre-Conditions" line="13">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.4</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240507 16:23:56.848" endtime="20240507 16:23:56.848"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${ProhlizecChrome}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240507 16:23:56.850" level="INFO">Opening browser 'Chrome' to base url 'https://www.dm.cz/'.</msg>
+<status status="PASS" starttime="20240507 16:23:56.849" endtime="20240507 16:23:59.834"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240507 16:23:59.835" endtime="20240507 16:24:00.354"/>
+</kw>
+<kw name="Wait Until Location Is" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" starttime="20240507 16:24:00.355" endtime="20240507 16:24:00.770"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CookieButton}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:24:00.770" endtime="20240507 16:24:01.608"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CookieButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:24:01.608" level="INFO">Clicking element 'dom:document.querySelector("#usercentrics-root").shadowRoot.querySelector("div[data-nosnippet='1'] .sc-aXZVg.jTGmCV div div .sc-dLMFU.QpAxQ .sc-eDPEul.jgnOsR .sc-kdBSHD.hwjBDA .sc-tagGq.rKCAx .sc-dtBdUo.fzvttm .sc-dcJsrY.idAmLR")'.</msg>
+<status status="PASS" starttime="20240507 16:24:01.608" endtime="20240507 16:24:02.483"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ClosePopUp}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:24:02.484" endtime="20240507 16:24:03.381"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ClosePopUp}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:24:03.383" level="INFO">Clicking element '//button[@title='Zavřít']'.</msg>
+<status status="PASS" starttime="20240507 16:24:03.382" endtime="20240507 16:24:04.299"/>
+</kw>
+<status status="PASS" starttime="20240507 16:23:56.848" endtime="20240507 16:24:04.300"/>
+</test>
+<test id="s1-s3-t2" name="TestCase_FE-148 – Kontrola filtrování podle značky" line="23">
+<kw name="KontrolaFiltrovaniPodleZnacky">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${MensWorld}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:24:04.302" endtime="20240507 16:24:05.146"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MensWorld}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:24:05.147" level="INFO">Clicking element '//a[@title="Men's World"]'.</msg>
+<status status="PASS" starttime="20240507 16:24:05.147" endtime="20240507 16:24:06.089"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Filters}</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240507 16:24:06.089" endtime="20240507 16:24:06.522"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${Filters}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20240507 16:24:06.522" endtime="20240507 16:24:07.634"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${Filters}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240507 16:24:08.476" level="INFO">Element '//nav[@aria-label='Filtrovat']' is displayed.</msg>
+<status status="PASS" starttime="20240507 16:24:07.634" endtime="20240507 16:24:08.476"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${Brand}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240507 16:24:09.323" level="INFO">Element '//button[contains(text(),'Značky')]' is displayed.</msg>
+<status status="PASS" starttime="20240507 16:24:08.476" endtime="20240507 16:24:09.323"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Brand}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:24:09.324" level="INFO">Clicking element '//button[contains(text(),'Značky')]'.</msg>
+<status status="PASS" starttime="20240507 16:24:09.323" endtime="20240507 16:24:10.224"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${BrandAdidas}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240507 16:24:10.225" endtime="20240507 16:24:10.647"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${BrandAdidas}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20240507 16:24:10.647" endtime="20240507 16:24:11.769"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BrandAdidas}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:24:11.770" level="INFO">Clicking element '//span[contains(text(),'adidas')]'.</msg>
+<status status="PASS" starttime="20240507 16:24:11.769" endtime="20240507 16:24:12.823"/>
+</kw>
+<status status="PASS" starttime="20240507 16:24:04.302" endtime="20240507 16:24:12.823"/>
+</kw>
+<status status="PASS" starttime="20240507 16:24:04.301" endtime="20240507 16:24:12.824"/>
+</test>
+<test id="s1-s3-t3" name="Post-conditions" line="26">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240507 16:24:12.826" endtime="20240507 16:24:15.319"/>
+</kw>
+<status status="PASS" starttime="20240507 16:24:12.826" endtime="20240507 16:24:15.320"/>
+</test>
+<status status="PASS" starttime="20240507 16:23:56.840" endtime="20240507 16:24:15.321"/>
+</suite>
+<status status="PASS" starttime="20240507 16:23:19.556" endtime="20240507 16:24:15.324"/>
+</suite>
+<statistics>
+<total>
+<stat pass="9" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="9" fail="0" skip="0" id="s1" name="TestSada FE 025 Filtrovani">TestSada FE 025 Filtrovani</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="KontrolaFiltrovaniPodleBarvy">TestSada FE 025 Filtrovani.KontrolaFiltrovaniPodleBarvy</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s2" name="KontrolaFiltrovaniPodleKategorie">TestSada FE 025 Filtrovani.KontrolaFiltrovaniPodleKategorie</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s3" name="KontrolaFiltrovaniPodleZnacky">TestSada FE 025 Filtrovani.KontrolaFiltrovaniPodleZnacky</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

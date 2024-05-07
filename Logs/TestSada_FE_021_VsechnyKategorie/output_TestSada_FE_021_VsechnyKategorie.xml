@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.7.2 on win32)" generated="20240507 16:31:01.542" rpa="false" schemaversion="4">
+<suite id="s1" name="TestSada FE 021 VsechnyKategorie" source="C:\Users\lukas_IT\Desktop\TS_Projekt_V2\Robot\TestSada_100-HlavniStranka\TestSada_FE_001_TestovaniFrontEnd\TestSada_FE_021_VsechnyKategorie">
+<suite id="s1-s1" name="KontrolaFunkcnostiOdkazu" source="C:\Users\lukas_IT\Desktop\TS_Projekt_V2\Robot\TestSada_100-HlavniStranka\TestSada_FE_001_TestovaniFrontEnd\TestSada_FE_021_VsechnyKategorie\KontrolaFunkcnostiOdkazu.robot">
+<test id="s1-s1-t1" name="Pre-Conditions" line="11">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.4</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240507 16:31:01.818" endtime="20240507 16:31:01.818"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${ProhlizecChrome}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240507 16:31:01.819" level="INFO">Opening browser 'Chrome' to base url 'https://www.dm.cz/'.</msg>
+<status status="PASS" starttime="20240507 16:31:01.819" endtime="20240507 16:31:04.815"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240507 16:31:04.815" endtime="20240507 16:31:05.336"/>
+</kw>
+<kw name="Wait Until Location Is" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" starttime="20240507 16:31:05.337" endtime="20240507 16:31:05.751"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CookieButton}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:31:05.752" endtime="20240507 16:31:06.598"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CookieButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:31:06.599" level="INFO">Clicking element 'dom:document.querySelector("#usercentrics-root").shadowRoot.querySelector("div[data-nosnippet='1'] .sc-aXZVg.jTGmCV div div .sc-dLMFU.QpAxQ .sc-eDPEul.jgnOsR .sc-kdBSHD.hwjBDA .sc-tagGq.rKCAx .sc-dtBdUo.fzvttm .sc-dcJsrY.idAmLR")'.</msg>
+<status status="PASS" starttime="20240507 16:31:06.599" endtime="20240507 16:31:07.509"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ClosePopUp}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:31:07.509" endtime="20240507 16:31:08.443"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ClosePopUp}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:31:08.444" level="INFO">Clicking element '//button[@title='Zavřít']'.</msg>
+<status status="PASS" starttime="20240507 16:31:08.444" endtime="20240507 16:31:09.355"/>
+</kw>
+<status status="PASS" starttime="20240507 16:31:01.817" endtime="20240507 16:31:09.356"/>
+</test>
+<test id="s1-s1-t2" name="TestCase_FE-139 – Kontrola funkčnosti odkazů (přesměrování)" line="21">
+<kw name="KontrolaFunkcnostiOdkazu">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Categories}</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240507 16:31:09.359" endtime="20240507 16:31:09.783"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${Categories}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20240507 16:31:09.783" endtime="20240507 16:31:10.883"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${Categories}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240507 16:31:11.732" level="INFO">Element '//div[@id='content-group-items-container-7']' is displayed.</msg>
+<status status="PASS" starttime="20240507 16:31:10.883" endtime="20240507 16:31:11.732"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CategoryDetail}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:31:11.733" level="INFO">Clicking element '//img[@alt='Líčení']'.</msg>
+<status status="PASS" starttime="20240507 16:31:11.732" endtime="20240507 16:31:12.666"/>
+</kw>
+<status status="PASS" starttime="20240507 16:31:09.358" endtime="20240507 16:31:12.666"/>
+</kw>
+<status status="PASS" starttime="20240507 16:31:09.358" endtime="20240507 16:31:12.667"/>
+</test>
+<test id="s1-s1-t3" name="Post-conditions" line="24">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240507 16:31:12.669" endtime="20240507 16:31:15.168"/>
+</kw>
+<status status="PASS" starttime="20240507 16:31:12.669" endtime="20240507 16:31:15.169"/>
+</test>
+<status status="PASS" starttime="20240507 16:31:01.572" endtime="20240507 16:31:15.170"/>
+</suite>
+<suite id="s1-s2" name="KontrolaKategorii" source="C:\Users\lukas_IT\Desktop\TS_Projekt_V2\Robot\TestSada_100-HlavniStranka\TestSada_FE_001_TestovaniFrontEnd\TestSada_FE_021_VsechnyKategorie\KontrolaKategorii.robot">
+<test id="s1-s2-t1" name="Pre-Conditions" line="11">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.4</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240507 16:31:15.180" endtime="20240507 16:31:15.180"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${ProhlizecChrome}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240507 16:31:15.181" level="INFO">Opening browser 'Chrome' to base url 'https://www.dm.cz/'.</msg>
+<status status="PASS" starttime="20240507 16:31:15.181" endtime="20240507 16:31:18.265"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240507 16:31:18.266" endtime="20240507 16:31:18.756"/>
+</kw>
+<kw name="Wait Until Location Is" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" starttime="20240507 16:31:18.757" endtime="20240507 16:31:19.173"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CookieButton}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:31:19.174" endtime="20240507 16:31:20.019"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CookieButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:31:20.020" level="INFO">Clicking element 'dom:document.querySelector("#usercentrics-root").shadowRoot.querySelector("div[data-nosnippet='1'] .sc-aXZVg.jTGmCV div div .sc-dLMFU.QpAxQ .sc-eDPEul.jgnOsR .sc-kdBSHD.hwjBDA .sc-tagGq.rKCAx .sc-dtBdUo.fzvttm .sc-dcJsrY.idAmLR")'.</msg>
+<status status="PASS" starttime="20240507 16:31:20.019" endtime="20240507 16:31:20.903"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ClosePopUp}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:31:20.903" endtime="20240507 16:31:21.773"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ClosePopUp}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:31:21.775" level="INFO">Clicking element '//button[@title='Zavřít']'.</msg>
+<status status="PASS" starttime="20240507 16:31:21.774" endtime="20240507 16:31:22.702"/>
+</kw>
+<status status="PASS" starttime="20240507 16:31:15.179" endtime="20240507 16:31:22.703"/>
+</test>
+<test id="s1-s2-t2" name="TestCase_FE-138 – Kontrola kategorií" line="21">
+<kw name="KontrolaKategorii">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Categories}</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240507 16:31:22.706" endtime="20240507 16:31:23.128"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${Categories}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20240507 16:31:23.128" endtime="20240507 16:31:24.235"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${Categories}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240507 16:31:25.079" level="INFO">Element '//div[@id='content-group-items-container-7']' is displayed.</msg>
+<status status="PASS" starttime="20240507 16:31:24.235" endtime="20240507 16:31:25.079"/>
+</kw>
+<status status="PASS" starttime="20240507 16:31:22.706" endtime="20240507 16:31:25.080"/>
+</kw>
+<status status="PASS" starttime="20240507 16:31:22.705" endtime="20240507 16:31:25.081"/>
+</test>
+<test id="s1-s2-t3" name="Post-conditions" line="24">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240507 16:31:25.082" endtime="20240507 16:31:27.591"/>
+</kw>
+<status status="PASS" starttime="20240507 16:31:25.082" endtime="20240507 16:31:27.592"/>
+</test>
+<status status="PASS" starttime="20240507 16:31:15.173" endtime="20240507 16:31:27.594"/>
+</suite>
+<status status="PASS" starttime="20240507 16:31:01.545" endtime="20240507 16:31:27.597"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="6" fail="0" skip="0" id="s1" name="TestSada FE 021 VsechnyKategorie">TestSada FE 021 VsechnyKategorie</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="KontrolaFunkcnostiOdkazu">TestSada FE 021 VsechnyKategorie.KontrolaFunkcnostiOdkazu</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s2" name="KontrolaKategorii">TestSada FE 021 VsechnyKategorie.KontrolaKategorii</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

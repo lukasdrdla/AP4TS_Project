@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.7.2 on win32)" generated="20240507 16:18:10.364" rpa="false" schemaversion="4">
+<suite id="s1" name="TestSada FE 011 Odhlaseni" source="C:\Users\lukas_IT\Desktop\TS_Projekt_V2\Robot\TestSada_100-HlavniStranka\TestSada_FE_001_TestovaniFrontEnd\TestSada_FE_006_UzivatelskePrihlaseni\TestSada_FE_011_Odhlaseni">
+<suite id="s1-s1" name="KontrolaOdhlaseni" source="C:\Users\lukas_IT\Desktop\TS_Projekt_V2\Robot\TestSada_100-HlavniStranka\TestSada_FE_001_TestovaniFrontEnd\TestSada_FE_006_UzivatelskePrihlaseni\TestSada_FE_011_Odhlaseni\KontrolaOdhlaseni.robot">
+<test id="s1-s1-t1" name="Pre-Conditions" line="11">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.4</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240507 16:18:10.656" endtime="20240507 16:18:10.656"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${ProhlizecChrome}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240507 16:18:10.658" level="INFO">Opening browser 'Chrome' to base url 'https://www.dm.cz/'.</msg>
+<status status="PASS" starttime="20240507 16:18:10.658" endtime="20240507 16:18:13.699"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240507 16:18:13.700" endtime="20240507 16:18:14.203"/>
+</kw>
+<kw name="Wait Until Location Is" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" starttime="20240507 16:18:14.204" endtime="20240507 16:18:14.621"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CookieButton}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:18:14.621" endtime="20240507 16:18:15.458"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CookieButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:18:15.460" level="INFO">Clicking element 'dom:document.querySelector("#usercentrics-root").shadowRoot.querySelector("div[data-nosnippet='1'] .sc-aXZVg.jTGmCV div div .sc-dLMFU.QpAxQ .sc-eDPEul.jgnOsR .sc-kdBSHD.hwjBDA .sc-tagGq.rKCAx .sc-dtBdUo.fzvttm .sc-dcJsrY.idAmLR")'.</msg>
+<status status="PASS" starttime="20240507 16:18:15.459" endtime="20240507 16:18:16.330"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ClosePopUp}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:18:16.330" endtime="20240507 16:18:17.241"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ClosePopUp}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:18:17.243" level="INFO">Clicking element '//button[@title='Zavřít']'.</msg>
+<status status="PASS" starttime="20240507 16:18:17.242" endtime="20240507 16:18:18.156"/>
+</kw>
+<kw name="Prihlasit">
+<arg>kolarfranta060@gmail.com</arg>
+<arg>kolarfranta060</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${MyAccount}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:18:18.157" endtime="20240507 16:18:19.006"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MyAccount}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:18:19.006" level="INFO">Clicking element '//button[@aria-label='Moje dm zákaznické konto']'.</msg>
+<status status="PASS" starttime="20240507 16:18:19.006" endtime="20240507 16:18:19.884"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LoginButton}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:18:19.884" endtime="20240507 16:18:20.723"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LoginButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:18:20.724" level="INFO">Clicking element '//button[@id='login-button']'.</msg>
+<status status="PASS" starttime="20240507 16:18:20.723" endtime="20240507 16:18:22.106"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LoginForm}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240507 16:18:22.106" endtime="20240507 16:18:22.993"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${LoginForm}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240507 16:18:23.850" level="INFO">Element '//form[@id='login-form']' is displayed.</msg>
+<status status="PASS" starttime="20240507 16:18:22.993" endtime="20240507 16:18:23.851"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EmailInput}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240507 16:18:23.852" level="INFO">Typing text 'kolarfranta060@gmail.com' into text field '//input[@id='emailAddress-input']'.</msg>
+<status status="PASS" starttime="20240507 16:18:23.851" endtime="20240507 16:18:25.338"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PasswordInput}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240507 16:18:25.339" level="INFO">Typing text 'kolarfranta060' into text field '//input[@id='password-input']'.</msg>
+<status status="PASS" starttime="20240507 16:18:25.338" endtime="20240507 16:18:26.723"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SubmitButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240507 16:18:26.724" level="INFO">Clicking element '//button[@id='login-button']'.</msg>
+<status status="PASS" starttime="20240507 16:18:26.723" endtime="20240507 16:18:27.611"/>
+</kw>
+<status status="PASS" starttime="20240507 16:18:18.157" endtime="20240507 16:18:27.611"/>
+</kw>
+<status status="PASS" starttime="20240507 16:18:10.655" endtime="20240507 16:18:27.612"/>
+</test>
+<test id="s1-s1-t2" name="TestCase_FE-116 – Kontrola odhlášení" line="23">
+<kw name="KontrolaOdhlaseni">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${MyAccount}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20240507 16:18:28.323" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240507 16:18:28.323" level="FAIL">WebDriverException: Message: no such execution context
+  (Session info: chrome=124.0.6367.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70C591502+60802]
+	(No symbol) [0x00007FF70C50AC02]
+	(No symbol) [0x00007FF70C3C7B13]
+	(No symbol) [0x00007FF70C3B05E0]
+	(No symbol) [0x00007FF70C3AEC3D]
+	(No symbol) [0x00007FF70C3AF3FF]
+	(No symbol) [0x00007FF70C3BE97E]
+	(No symbol) [0x00007FF70C3D57CF]
+	(No symbol) [0x00007FF70C3DB38A]
+	(No symbol) [0x00007FF70C3AFB85]
+	(No symbol) [0x00007FF70C3D53AE]
+	(No symbol) [0x00007FF70C45A0FF]
+	(No symbol) [0x00007FF70C43A923]
+	(No symbol) [0x00007FF70C408FEC]
+	(No symbol) [0x00007FF70C409C21]
+	GetHandleVerifier [0x00007FF70C89411D+3217821]
+	GetHandleVerifier [0x00007FF70C8D60B7+3488055]
+	GetHandleVerifier [0x00007FF70C8CF03F+3459263]
+	GetHandleVerifier [0x00007FF70C64B846+823494]
+	(No symbol) [0x00007FF70C515F9F]
+	(No symbol) [0x00007FF70C510EC4]
+	(No symbol) [0x00007FF70C511052]
+	(No symbol) [0x00007FF70C5018A4]
+	BaseThreadInitThunk [0x00007FFA5FC97344+20]
+	RtlUserThreadStart [0x00007FFA603026B1+33]
+</msg>
+<status status="FAIL" starttime="20240507 16:18:27.617" endtime="20240507 16:18:28.327"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MyAccount}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240507 16:18:28.328" endtime="20240507 16:18:28.328"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LogOutButton}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20240507 16:18:28.328" endtime="20240507 16:18:28.328"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LogOutButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240507 16:18:28.329" endtime="20240507 16:18:28.329"/>
+</kw>
+<status status="FAIL" starttime="20240507 16:18:27.615" endtime="20240507 16:18:28.329"/>
+</kw>
+<status status="FAIL" starttime="20240507 16:18:27.614" endtime="20240507 16:18:28.330">WebDriverException: Message: no such execution context
+  (Session info: chrome=124.0.6367.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70C591502+60802]
+	(No symbol) [0x00007FF70C50AC02]
+	(No symbol) [0x00007FF70C3C7B13]
+	(No symbol) [0x00007FF70C3B05E0]
+	(No symbol) [0x00007FF70C3AEC3D]
+	(No symbol) [0x00007FF70C3AF3FF]
+	(No symbol) [0x00007FF70C3BE97E]
+	(No symbol) [0x00007FF70C3D57CF]
+	(No symbol) [0x00007FF70C3DB38A]
+	(No symbol) [0x00007FF70C3AFB85]
+	(No symbol) [0x00007FF70C3D53AE]
+	(No symbol) [0x00007FF70C45A0FF]
+	(No symbol) [0x00007FF70C43A923]
+	(No symbol) [0x00007FF70C408FEC]
+	(No symbol) [0x00007FF70C409C21]
+	GetHandleVerifier [0x00007FF70C89411D+3217821]
+	GetHandleVerifier [0x00007FF70C8D60B7+3488055]
+	GetHandleVerifier [0x00007FF70C8CF03F+3459263]
+	GetHandleVerifier [0x00007FF70C64B846+823494]
+	(No symbol) [0x00007FF70C515F9F]
+	(No symbol) [0x00007FF70C510EC4]
+	(No symbol) [0x00007FF70C511052]
+	(No symbol) [0x00007FF70C5018A4]
+	BaseThreadInitThunk [0x00007FFA5FC97344+20]
+	RtlUserThreadStart [0x00007FFA603026B1+33]
+</status>
+</test>
+<test id="s1-s1-t3" name="Post-conditions" line="26">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240507 16:18:28.335" endtime="20240507 16:18:30.883"/>
+</kw>
+<status status="PASS" starttime="20240507 16:18:28.334" endtime="20240507 16:18:30.884"/>
+</test>
+<status status="FAIL" starttime="20240507 16:18:10.394" endtime="20240507 16:18:30.885"/>
+</suite>
+<status status="FAIL" starttime="20240507 16:18:10.366" endtime="20240507 16:18:30.888"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="1" skip="0" id="s1" name="TestSada FE 011 Odhlaseni">TestSada FE 011 Odhlaseni</stat>
+<stat pass="2" fail="1" skip="0" id="s1-s1" name="KontrolaOdhlaseni">TestSada FE 011 Odhlaseni.KontrolaOdhlaseni</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
